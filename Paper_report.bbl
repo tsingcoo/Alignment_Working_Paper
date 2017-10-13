@@ -5,6 +5,11 @@ H.~{Ghader} and C.~{Monz}.
 \newblock {What does Attention in Neural Machine Translation Pay Attention to?}
 \newblock {\em ArXiv e-prints}, October 2017.
 
+\bibitem{Rikters2017confidence}
+M.~{Rikters} and M.~{Fishel}.
+\newblock {Confidence through Attention}.
+\newblock {\em ArXiv e-prints}, October 2017.
+
 \bibitem{Tran16unsupervised}
 M.~Ke Tran, Yonatan Bisk, Ashish Vaswani, Daniel Marcu, and Kevin Knight.
 \newblock Proceedings of the workshop on structured prediction for nlp.

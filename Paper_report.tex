@@ -27,18 +27,61 @@
 % \end{abstract}
 
 %----------------------------------------------------------------------------------------
-%	SECTION 1
+%	IBM models
 %----------------------------------------------------------------------------------------
 
 \section{IBM models}
+
+%----------------------------------------------------------------------------------------
+%	Unsupervised Neural HMMs
+%----------------------------------------------------------------------------------------
+
 \section{Unsupervised Neural HMMs \citep{Tran16unsupervised}}
+
+%----------------------------------------------------------------------------------------
+%	What does Attention in NMT pay Attention to ?
+%----------------------------------------------------------------------------------------
+
 \section{What does Attention in NMT pay Attention to ? \citep{Ghader2017what} }
 \subsection{Main idea}
-This research compares between Attention Models (Non-recurrent attention model and Input-feeding model) and Word soft Alignment.
-The result is that their differences depends on the word being generated.
+This research compares between Attention Models (Non-recurrent attention model/ Global attention and Recurrent attention/ Input-feeding model) and known Word Alignment.
+The result is that their differences depends on the word type being generated.
 \subsection{How to compare ?}
 Higher consistency between Attention and Alignment leading to better translation.
 
+\begin{itemize}
+\item \textbf{Spearman's rank correlation between attention quality} (Attention loss compared known human alignment) \textbf{and translation quality} (Word prediction loss).
+Higher correlation means a closer relationship between translation quality and consistency of attention versus alignment.
+	\begin{itemize}
+	\item Attention loss
+	\item Word prediction loss
+	\end{itemize}
+\item Attention concentration: Entropy of attention distribution (Soft-hard attention problem)
+\end{itemize}
+
+\subsection{Analysis}
+The analysis is based on POS tags experiments.
+\begin{itemize}
+\item Impact of Attention between Non-recurrent (NR) and Recurrent attention (IF): IF has lower AER (Hard attention) and Attention loss (Soft attention).
+\item Translation quality: Consistency between attention and word alignment depends on POS tags. For example,
+	\begin{itemize}
+	\item There is a higher consistency in the case of nouns. However, attention captures other information in the case of verbs.
+	\item Translation quality of Verbs is better than Nouns. It means attention does not follow alignment for translating Verbs.
+	\end{itemize}
+\item Attention concentration: Review the case of Verbs and Nouns.
+	\begin{itemize}
+	\item Nouns have a lower attention entropy (Higher concentration), lower attention loss (Closer to Alignment), which is that attention entropy can be used as a measure of closeness of attention to alignment in the case of nouns
+	\item Verbs have a lower correlation between attention entropy and word prediction loss, which means that attention concentration is not necessary for translating verbs.
+	\end{itemize}
+\item Attention distribution: It shows how a POS tag of target sentence depends on other POS tags of source sentence.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	What does Attention in NMT pay Attention to ?
+%----------------------------------------------------------------------------------------
+
+\section{Confidence through Attention \citep{Rikters2017confidence}}
+\subsection{Main idea}
 
 
 %----------------------------------------------------------------------------------------

@@ -3,45 +3,45 @@ The top-level auxiliary file: Paper_report.aux
 The style file: plain.bst
 Database file #1: Khoa_Alignment_Paper.bib
 Warning--empty booktitle in Tran16unsupervised
-You've used 2 entries,
+You've used 3 entries,
             2118 wiz_defined-function locations,
-            511 strings with 4431 characters,
-and the built_in function-call counts, 774 in all, are:
-= -- 75
-> -- 41
+            515 strings with 4533 characters,
+and the built_in function-call counts, 1016 in all, are:
+= -- 98
+> -- 54
 < -- 1
-+ -- 16
-- -- 14
-* -- 51
-:= -- 132
-add.period$ -- 7
-call.type$ -- 2
-change.case$ -- 13
++ -- 21
+- -- 18
+* -- 65
+:= -- 177
+add.period$ -- 10
+call.type$ -- 3
+change.case$ -- 18
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 30
-empty$ -- 54
-format.name$ -- 14
-if$ -- 162
+cite$ -- 4
+duplicate$ -- 40
+empty$ -- 71
+format.name$ -- 18
+if$ -- 210
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 2
-newline$ -- 13
-num.names$ -- 4
-pop$ -- 16
+int.to.str$ -- 3
+missing$ -- 3
+newline$ -- 18
+num.names$ -- 6
+pop$ -- 21
 preamble$ -- 1
-purify$ -- 11
+purify$ -- 15
 quote$ -- 0
-skip$ -- 24
+skip$ -- 32
 stack$ -- 0
-substring$ -- 34
-swap$ -- 9
+substring$ -- 39
+swap$ -- 10
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 8
+type$ -- 12
 warning$ -- 1
-while$ -- 7
-width$ -- 3
-write$ -- 23
+while$ -- 9
+width$ -- 4
+write$ -- 33
 (There was 1 warning)
