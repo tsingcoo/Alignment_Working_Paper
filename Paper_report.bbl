@@ -1,5 +1,10 @@
 \begin{thebibliography}{1}
 
+\bibitem{Conneau2017Word}
+A.~{Conneau}, G.~{Lample}, M.~{Ranzato}, L.~{Denoyer}, and H.~{J{\'e}gou}.
+\newblock {Word Translation Without Parallel Data}.
+\newblock {\em ArXiv e-prints}, October 2017.
+
 \bibitem{Ghader2017what}
 H.~{Ghader} and C.~{Monz}.
 \newblock {What does Attention in Neural Machine Translation Pay Attention to?}

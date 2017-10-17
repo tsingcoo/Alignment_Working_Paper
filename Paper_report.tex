@@ -13,18 +13,22 @@
 %	DOCUMENT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\title{Paper Report} % Title
-
-\author{NGO HO Anh Khoa} % Author name
+\title{Paper Report}
+\author{NGO HO Anh Khoa}
 
 \begin{document}
-\maketitle % Insert the title, author and date
+\maketitle
 
+\tableofcontents
+\newpage
 
 % If you wish to include an abstract, uncomment the lines below
 % \begin{abstract}
 % Abstract text
 % \end{abstract}
+
+
+\part{Paper report}
 
 %----------------------------------------------------------------------------------------
 %	IBM models
@@ -37,6 +41,10 @@
 %----------------------------------------------------------------------------------------
 
 \section{Unsupervised Neural HMMs \citep{Tran16unsupervised}}
+\subsection{Main idea}
+This research show how to apply unsupervised hidden Markov model in neural network approach.
+
+
 
 %----------------------------------------------------------------------------------------
 %	What does Attention in NMT pay Attention to ?
@@ -54,11 +62,25 @@ Higher consistency between Attention and Alignment leading to better translation
 Higher correlation means a closer relationship between translation quality and consistency of attention versus alignment.
 	\begin{itemize}
 	\item Attention loss
-	\item Word prediction loss
-	\end{itemize}
-\item Attention concentration: Entropy of attention distribution (Soft-hard attention problem)
-\end{itemize}
+		\begin{equation}
+		L_{At}(outToken) = - \sum_{inToken} Al(in, out) * log(At(in, out))
+		\end{equation}
+		\begin{itemize}
+		\item Al(in,out): Weight of alignment link between input token and output token
+		\item At(in,out): Weight of attention between input token and output token
+		\end{itemize}
 
+	\item Word prediction loss: Softmax()
+	\end{itemize}
+	
+\item Attention concentration: Entropy of attention distribution (Soft-hard attention problem)
+	\begin{equation}
+	E_{At}(outToken) = - \sum_{in} At(in, out) * log (At(in, out))
+	\end{equation}
+	\begin{itemize}
+	\item At(in,out): Weight of attention between input token and output token
+	\end{itemize}
+\end{itemize}
 \subsection{Analysis}
 The analysis is based on POS tags experiments.
 \begin{itemize}
@@ -81,12 +103,127 @@ The analysis is based on POS tags experiments.
 %----------------------------------------------------------------------------------------
 
 \section{Confidence through Attention \citep{Rikters2017confidence}}
+
 \subsection{Main idea}
+\textbf{Auto-evaluation metric without reference.}
+This research is that attention distribution becomes a confidence metric (Translation quality and Decoder confidence)
+\begin{itemize}
+\item Filtering out bad translation from a large back-translated corpus (Provide a better parallel corpus)
+\item Selecting the best translation in a hybrid setup of 2 translation systems
+\end{itemize}
+The result is that this metric could be consider as an human judgement (Not so true!, just about 50\%) and leads to BLEU score improvement (in some cases).
+
+\subsection{How to calculate Confidence metric ?}
+Penalty measures: Coverage deviation and Absentmindedness
+\begin{itemize}
+\item Coverage Deviation Penalty: Lacking attention and Too much attention per input token, which mean penalizing the sum of attention per input token for going to far from 1.0 (Why 1.0: Replaced by token's expected fertility)
+
+\begin{equation}
+CDP = -\frac{1}{inSentLen}\sum_{inToken} log(1 + (1 - \sum_{outToken} \alpha_{out-inToken})^2 )
+\end{equation}
+
+\item Absentmindedness Penalty (Entropy): The attention of confident output tokens should concentrate on a small number of input tokens and vice versa (Assumption).
+\begin{equation}
+AP_{out} = -\frac{1}{inSentLen}\sum_{inToken} \sum_{outToken} \alpha_{out-inToken} * log (\alpha_{out-inToken})
+\end{equation}
+
+\item Combination:
+\begin{equation}
+Confidence = CDP + AP_{out} + AP_{in}
+\end{equation}
+\end{itemize}
+
+\subsection{Analysis}
+\subsubsection{Comparison with human evaluation}
+They use Kendall rank correlation coefficient for looking at the pairs where human scores differ. They recognize that their metric over-penalizes the translations which do not follow the source word-by-word.
+\subsubsection{Exp: Filtering Back-translated Data}
+They compare their confidence metric with language model method in filtering the best translated sentences. Both methods have the similar levels of overlapping the human evaluation. One point should be considered is that their metric does not require any additional model (LM).
+
+For BLEU score, their method show a better performance on some cases, which is in general insignificant. 
+
+\subsubsection{Exp: Hybrid Decisions}
+The difference between two baseline systems influences on the final BLEU score. A small difference leads to the small improvements, a large difference causes a score drop. It is well-reported that hybrid selection overlaps about 50\% human selection.
+
+%----------------------------------------------------------------------------------------
+%	Word Translation without Parallel data
+%----------------------------------------------------------------------------------------
+
+\section{Word Translation without Parallel data \citep{Conneau2017Word}}
+
+\subsection{Main idea}
+The research is about \textbf{building a bilingual dictionary without parallel data} by aligning monolingual word embedding spaces in a unsupervised way (GAN) and proposing a similarity metric CSLS.
+
+Its results show a strong performance of using Procrustes-CSLS. GAN in this case is a step necessary to overcome unsupervised learning. 
+
+\subsection{How does it works ?}
+Input: Two large monolingual corpora.\\
+Output: Linear mapping W between the source and target space.
+Two steps of training:
+\begin{enumerate}
+\item Training GAN:
+	\begin{itemize}
+	\item A discriminator distinguishes between n mapped source embeddings and m mapped target embeddings.\\
+	Objective function:
+	\begin{equation}
+	Loss_{D}(\theta_{D}| W) = - \frac{1}{n} \sum_{i=1}^{n} \log P_{\theta_{D}}(source=true|Wx_{i}) - \frac{1}{m} \sum_{i=1}^{m} \log P_{\theta_{D}}(source=false|y_{i})
+	\end{equation}
+	
+	\item A generator creates these embeddings to fool discriminator.\\
+	Objective function:
+	\begin{equation}
+	Loss_{W}(W|\theta_{D}) = - \frac{1}{n} \sum_{i=1}^{n} \log P_{\theta_{D}}(source=false|Wx_{i}) - \frac{1}{m} \sum_{i=1}^{m} \log P_{\theta_{D}}(source=true|y_{i})
+	\end{equation}
+	
+	\item Update parameter:\\
+	Orthogonality advantages: Reservation of monolingual quality of the embeddings (Dot product of vectors or distances, rotation $\rightarrow$ An isometry of the Euclidean space); Stable training)
+	\begin{equation}
+	W \leftarrow (1 + \beta)W - \beta(WW^{T})W
+	\end{equation}
+	
+	
+	\end{itemize}
+\item Refinement procedure (Solution for rare words that GAN does not well solve) repeats until reaching stopping condition.
+	\begin{enumerate}
+	\item Extracting a synthetic high-quality dictionary (Most frequent words) evaluated by CSLS
+	\item Applying Procrustes solution for generating more accurate dictionary.
+	\end{enumerate}
+\item Stopping condition/Best hyper-parameters selection - Validation step: Similarity measure CSLS between mapped source and target words.\\
+	Why: It is based on K-NN and overcomes a problem of two spaces and "Hubs and Anti-hubs" (Some points are highly near many other points while there are some points are not nearest any point in high-dimensional spaces).\\
+	They proposed a bipartite neighbourhood graph. Each word of a language is connected to K words of an other language.
+	\begin{equation}
+	CSLS(Wx_{s}, y_{t}) = 2 \cos(Wx_{s}, y_{t}) - r_{T}(Wx_{s}) - r_{S}(y_{t})
+	\end{equation}
+		\begin{itemize}
+		\item $r_{T}(Wx_{s}) = \frac{1}{K} \sum_{y_{t} \in N_{T}(Wx_{s})} \cos(Wx_{s}, y_{t})$\\
+		Mean similarity of a source embedding $x_{s}$ to its target neighbours.
+		\item $r_{S}(y_{t}) = \frac{1}{K} \sum_{Wx_{s} \in N_{S}(y_{t})} \cos(y_{t}, Wx_{s})$\\
+		Mean similarity of a source embedding $x_{s}$ to its target neighbours.
+		\item $N_{T}(Wx_{s})$: Neighbour of a source word $Wx_{s}$ in target word space.
+		\end{itemize}
+
+\end{enumerate}
+
+
+%----------------------------------------------------------------------------------------
+%	Report
+%----------------------------------------------------------------------------------------
+\pagebreak 
+\part{Report}
+
+\section{Evaluation of a translation/alignment}
+\begin{enumerate}
+\item Alignment error rate
+\item Attention concentration: Entropy \citep{Ghader2017what}, Absentmindedness penalty \citep{Rikters2017confidence}
+\item Attention loss: Compared with known soft alignment
+\item Confidence metric - Auto-evaluation: Coverage deviation penalty and Absentmindedness penalty \citep{Rikters2017confidence}
+
+\end{enumerate}
 
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
+\pagebreak 
 \bibliographystyle{plain}
 \bibliography{Khoa_Alignment_Paper}
 
