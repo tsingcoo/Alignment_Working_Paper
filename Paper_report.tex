@@ -115,6 +115,7 @@ $ = \sum_{t}\sum_{z_{t}} p(z_{t}, z_{t-1}|X) \dfrac{\partial}{\partial\theta} \l
 \begin{itemize}
 \item Input: A sentence $X = x_{1},..., x_{t},... x_{L_{x}}$, a set of vocabulary $W = w_{1},..., w_{i},... w_{L_{W}}$ a set of tags $Z = z_{1},..., z_{j},... z_{L_{z}}$
 \item Output: $p(z_{t}|z_{t-1},\theta)$ and $p(x_{t}|z_{t},\theta)$ at each time t.
+
 \item How:
 	\begin{enumerate}
 	\item Embedding X and Z by $\theta$: Vector embedding of W $v_{W}$ (Using CNN - Convolution for Morphology) and vector embedding of Z $v_{Z}$ (Simple feed-forward nn having a lookup table following by a non-linear activation ReLU). $v_{W}$ and $v_{Z}$ have the same dimension.
