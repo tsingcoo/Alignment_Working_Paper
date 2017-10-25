@@ -20,4 +20,18 @@ M.~Ke Tran, Yonatan Bisk, Ashish Vaswani, Daniel Marcu, and Kevin Knight.
 \newblock Proceedings of the workshop on structured prediction for nlp.
 \newblock pages 63--71. Association for Computational Linguistics, 2016.
 
+\bibitem{Vogel1996HMM}
+Stephan Vogel, Hermann Ney, and Christoph Tillmann.
+\newblock Hmm-based word alignment in statistical translation.
+\newblock In {\em Proceedings of the 16th Conference on Computational
+  Linguistics - Volume 2}, COLING '96, pages 836--841, Stroudsburg, PA, USA,
+  1996. Association for Computational Linguistics.
+
+\bibitem{Yang13word}
+Nan Yang, Shujie Liu, Mu~Li, Ming Zhou, and Nenghai Yu.
+\newblock Word alignment modeling with context dependent deep neural network.
+\newblock In {\em Proceedings of the 51st Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers)}, pages 166--175.
+  Association for Computational Linguistics, 2013.
+
 \end{thebibliography}

@@ -1,23 +1,26 @@
-\contentsline {part}{I\hspace {1em}Paper report}{2}
-\contentsline {section}{\numberline {1}IBM models}{2}
-\contentsline {section}{\numberline {2}Unsupervised Neural HMMs \citep {Tran16unsupervised}}{2}
-\contentsline {subsection}{\numberline {2.1}Main idea}{2}
-\contentsline {subsection}{\numberline {2.2}What is their concentration ?}{2}
-\contentsline {subsection}{\numberline {2.3}What is the role of HMM ?}{3}
-\contentsline {subsection}{\numberline {2.4}Where is neural network ?}{3}
-\contentsline {section}{\numberline {3}What does Attention in NMT pay Attention to ? \citep {Ghader2017what} }{4}
-\contentsline {subsection}{\numberline {3.1}Main idea}{4}
-\contentsline {subsection}{\numberline {3.2}How to compare ?}{4}
-\contentsline {subsection}{\numberline {3.3}Analysis}{5}
-\contentsline {section}{\numberline {4}Confidence through Attention \citep {Rikters2017confidence}}{5}
-\contentsline {subsection}{\numberline {4.1}Main idea}{5}
-\contentsline {subsection}{\numberline {4.2}How to calculate Confidence metric ?}{6}
-\contentsline {subsection}{\numberline {4.3}Analysis}{6}
-\contentsline {subsubsection}{\numberline {4.3.1}Comparison with human evaluation}{6}
-\contentsline {subsubsection}{\numberline {4.3.2}Exp: Filtering Back-translated Data}{6}
-\contentsline {subsubsection}{\numberline {4.3.3}Exp: Hybrid Decisions}{7}
-\contentsline {section}{\numberline {5}Word Translation without Parallel data \citep {Conneau2017Word}}{7}
-\contentsline {subsection}{\numberline {5.1}Main idea}{7}
-\contentsline {subsection}{\numberline {5.2}How does it works ?}{7}
-\contentsline {part}{II\hspace {1em}Report}{9}
-\contentsline {section}{\numberline {6}Evaluation of a translation/alignment}{9}
+\contentsline {part}{I\hspace {1em}Paper report}{3}
+\contentsline {section}{\numberline {1}IBM models}{3}
+\contentsline {section}{\numberline {2}Unsupervised Neural HMMs \citep {Tran16unsupervised}}{3}
+\contentsline {subsection}{\numberline {2.1}Main idea}{3}
+\contentsline {subsection}{\numberline {2.2}What is their concentration ?}{3}
+\contentsline {subsection}{\numberline {2.3}What is the role of HMM ?}{4}
+\contentsline {subsection}{\numberline {2.4}Where is neural network ?}{4}
+\contentsline {section}{\numberline {3}What does Attention in NMT pay Attention to ? \citep {Ghader2017what} }{5}
+\contentsline {subsection}{\numberline {3.1}Main idea}{5}
+\contentsline {subsection}{\numberline {3.2}How to compare ?}{5}
+\contentsline {subsection}{\numberline {3.3}Analysis}{6}
+\contentsline {section}{\numberline {4}Confidence through Attention \citep {Rikters2017confidence}}{6}
+\contentsline {subsection}{\numberline {4.1}Main idea}{6}
+\contentsline {subsection}{\numberline {4.2}How to calculate Confidence metric ?}{7}
+\contentsline {subsection}{\numberline {4.3}Analysis}{7}
+\contentsline {subsubsection}{\numberline {4.3.1}Comparison with human evaluation}{7}
+\contentsline {subsubsection}{\numberline {4.3.2}Exp: Filtering Back-translated Data}{7}
+\contentsline {subsubsection}{\numberline {4.3.3}Exp: Hybrid Decisions}{8}
+\contentsline {section}{\numberline {5}Word Translation without Parallel data \citep {Conneau2017Word}}{8}
+\contentsline {subsection}{\numberline {5.1}Main idea}{8}
+\contentsline {subsection}{\numberline {5.2}How does it works ?}{8}
+\contentsline {section}{\numberline {6}Word Alignment Modeling with Context Dependent Deep Neural Network \citep {Yang13word}}{9}
+\contentsline {subsection}{\numberline {6.1}Main idea}{9}
+\contentsline {subsection}{\numberline {6.2}How does DNN work in word alignment ?}{9}
+\contentsline {part}{II\hspace {1em}Report}{11}
+\contentsline {section}{\numberline {7}Evaluation of a translation/alignment}{11}

@@ -290,6 +290,49 @@ Two steps of training:
 
 \end{enumerate}
 
+%----------------------------------------------------------------------------------------
+%	Word Alignment Modeling with Context Dependent Deep Neural Network
+%----------------------------------------------------------------------------------------
+
+\section{Word Alignment Modeling with Context Dependent Deep Neural Network \citep{Yang13word}}
+
+\subsection{Main idea}
+The research describes how to use Context Dependent Deep NN in HMM-based word alignment model. This means that bilingual word embedding could capture not only lexical translation and context from surrounding words.
+An example is translating a rare word by using its surrounding words.\\
+It is noted that this version uses a smaller number of parameters than the classic HMM model.
+
+\subsection{How does DNN work in word alignment ?}
+The role of DNN in this paper is learning automatically feature from raw text.
+They start from the factorization of the joint probability \cite{Vogel1996HMM}.
+\begin{equation}
+p(a, e| f) = \prod_{i = 1}^{|e|} P_{lex}(e_{i}|f_{a_{i}}) P_{d}(a_{i}|a_{i-1})
+\end{equation}
+	\begin{itemize}
+	\item Given a sentence pair (e,f) 
+	\item $P_{lex}$: Lexical translation probability, emission probability
+	\item $P_{d}$: HMM alignment probability \cite{Vogel1996HMM}, transition probability. The paper has a different notation: $P_{d}(a_{i} - a_{i-1})$ and it is called Jump distance distortion probability (Why: The alignment probability depends only on the jump width $(a_{i} - a_{i-1})$ \cite{Vogel1996HMM}).
+	\end{itemize}
+
+They propose using a score instead of these probabilities because they would like to avoid the softmax normalization step of a large vocabulary. The formula above becomes:
+
+\begin{equation}
+s_{NN}(a|e, f) = \prod_{i = 1}^{|e|} t_{lex}(e_{i},f_{a_{i}}|e,f) t_{d}(a_{i},a_{i-1}|e,f)
+\end{equation}
+	\begin{itemize}
+	\item $f_{a_{i}}$ represents not only this word but the context around this word. Surrounding words of both source and target word are input of DNN, which is handling the context of both sides. This could reduce the explosion of parameter number. \\ In this case, they use fixed length windows surrounding both $e_{i}$ and $f_{j}$. 
+	\item $t_{lex}$: Lexical translation score.
+	\begin{equation}
+	t_{lex}(e_{i},f_{j}|e,f) = functions_{NN}(window(e_{i}),window(f_{j}) )
+	\end{equation}
+	\item $t_{d}$: Distortion score.
+	\begin{equation}
+	t_{d}(a_{i}, a_{i-1}|e,f) = t_{d}(a_{i} - a_{i-1}|window(f_{a_{i-1}})) = functions_{NN}(window(f_{a_{i-1}}))
+	\end{equation}
+	They recognize that this lexicalized distortion does not produce a better alignment. They reverse to the simple version.
+	\begin{equation}
+	t_{d}(a_{i}, a_{i-1}|e,f) = t_{d}(a_{i} - a_{i-1})
+	\end{equation}
+	\end{itemize}
 
 %----------------------------------------------------------------------------------------
 %	Report
