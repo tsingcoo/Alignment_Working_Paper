@@ -23,4 +23,9 @@
 \contentsline {subsection}{\numberline {6.1}Main idea}{9}
 \contentsline {subsection}{\numberline {6.2}How does DNN work in word alignment ?}{9}
 \contentsline {part}{II\hspace {1em}Report}{11}
-\contentsline {section}{\numberline {7}Evaluation of a translation/alignment}{11}
+\contentsline {section}{\numberline {7}Overview about statistical alignment}{11}
+\contentsline {subsection}{\numberline {7.1}General problem}{11}
+\contentsline {subsubsection}{\numberline {7.1.1}}{11}
+\contentsline {subsubsection}{\numberline {7.1.2}Problem of empty word}{11}
+\contentsline {subsection}{\numberline {7.2}Hidden Markov Alignment Model}{11}
+\contentsline {section}{\numberline {8}Evaluation of a translation/alignment}{12}

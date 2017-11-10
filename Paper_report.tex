@@ -33,8 +33,6 @@
 %----------------------------------------------------------------------------------------
 %	IBM models
 %----------------------------------------------------------------------------------------
-IBM models
-
 
 \section{IBM models}
 
@@ -339,6 +337,68 @@ s_{NN}(a|e, f) = \prod_{i = 1}^{|e|} t_{lex}(e_{i},f_{a_{i}}|e,f) t_{d}(a_{i},a_
 %----------------------------------------------------------------------------------------
 \pagebreak 
 \part{Report}
+
+\section{Overview about statistical alignment}
+\subsection{General problem}
+Input:
+\begin{itemize}
+\item A source sentence: $f_1^J = f_1,...,f_j,...f_J$
+\item A target sentence: $e_1^I = f_1,...,f_i,...f_I$
+\end{itemize}
+Output: Alignment map $j \rightarrow i = a_j$
+\begin{itemize}
+\item An alignment: $a_1^J = a_1,...,a_j,...a_J$
+\end{itemize}
+
+\subsubsection{}
+Our work is modelling the relationship between a source sentence and a target sentence. \\
+We start from the view of translation model, which is finding this best translation $e_1^I$ for a source sentence $f_1^J$.
+\begin{equation}
+e_1^I = argmax_{e_1^I} p(e_1^I|f_1^J) = argmax_{e_1^I} \frac{p(f_1^J|e_1^I)p(e_1^I)}{p(f_1^J)}
+\end{equation}
+
+In this case, the translation direction is changed from $p(e_1^I|f_1^J)$ to $p(f_1^J|e_1^I)$. This should be noted while reading alignment papers. \\
+
+From now, the work of translation is modelling $p(f_1^J|e_1^I)$. Our work is more complicated by adding an alignment component $a_1^J$ which maps from a source position j to a target position $a_j$ (It could be i, but there is also empty words).
+
+\begin{equation}
+p(f_1^J|e_1^I) = \sum_{a_1^J} p(f_1^J, a_1^J|e_1^I)
+\end{equation}
+
+With the model parameters $\theta$, our main problem becomes $p_{\theta}(f_1^J, a_1^J|e_1^I)$
+
+\subsubsection{Problem of empty word}
+
+\subsection{Hidden Markov Alignment Model}
+The alignment model is re-structured:
+\begin{equation}
+p(f_1^J, a_1^J|e_1^I) = p(J|e_1^I) \prod_{j=1}^J p(f_j, a_j | f_1^{j-1}, a_1^{j-1}, e_1^I)
+\end{equation}
+\begin{equation}
+= p(J|e_1^I) \prod_{j=1}^J p( f_j | f_1^{j-1}, a_j, e_1^I) * p( a_j | f_1^{j-1}, a_1^{j-1}, e_1^I)
+\end{equation}
+
+For this new structure, there are three different probabilities:
+\begin{itemize}
+\item $p(J|e_1^I)$ : Length probability
+\item $p( f_j | f_1^{j-1}, a_j, e_1^I)$ : Lexicon  probability
+\item $p( a_j | f_1^{j-1}, a_1^{j-1}, e_1^I)$ : Alignment probability
+\end{itemize}
+
+We need some assumptions to put this model into HMM:
+\begin{itemize}
+\item $p( f_j | f_1^{j-1}, a_j, e_1^I) \rightarrow p(f_j | e_{a_j}) $ : The lexicon probability depends only on the word at position $a_j$
+\item $p( a_j | f_1^{j-1}, a_1^{j-1}, e_1^I) \rightarrow p(a_j | a_{j-1}, I) $ : The alignment $a_j$ depends on $a_{j - 1}$  (First-order dependence)
+\item $p(J|e_1^I) \rightarrow p(J|I)$ : Simplify this probability (Not because of HMM, it's just simplification)
+\end{itemize}
+
+Therefore, $p(f_1^J, a_1^J|e_1^I)$ is decomposed under these assumptions as follows:
+
+\begin{equation}
+p(f_1^J, a_1^J|e_1^I) = p(J|I) \prod_{j=1}^J p(f_j | e_{a_j}) * p(a_j | a_{j-1}, I)
+\end{equation}
+
+
 
 \section{Evaluation of a translation/alignment}
 \begin{enumerate}
