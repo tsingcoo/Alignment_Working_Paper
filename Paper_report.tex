@@ -31,12 +31,6 @@
 \part{Paper report}
 
 %----------------------------------------------------------------------------------------
-%	IBM models
-%----------------------------------------------------------------------------------------
-
-\section{IBM models}
-
-%----------------------------------------------------------------------------------------
 %	Unsupervised Neural HMMs
 %----------------------------------------------------------------------------------------
 
@@ -331,6 +325,26 @@ s_{NN}(a|e, f) = \prod_{i = 1}^{|e|} t_{lex}(e_{i},f_{a_{i}}|e,f) t_{d}(a_{i},a_
 	t_{d}(a_{i}, a_{i-1}|e,f) = t_{d}(a_{i} - a_{i-1})
 	\end{equation}
 	\end{itemize}
+	
+\subsection{Result}
+
+%----------------------------------------------------------------------------------------
+%	Recurrent Neural Networks for Word Alignment Model
+%----------------------------------------------------------------------------------------
+\section{Recurrent Neural Networks for Word Alignment Model \citep{Tamura14recurrent}}
+
+\subsection{Main idea}
+This research is mainly based on \citep{Yang13word}. The difference is that the alignment score is calculated in recurrent approach RNNs, which means that $a_j$ depends on all previous position $a_{0...j-1}$.
+
+\subsection{How does RNNs work in calculating alignment score ?}
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
 
 %----------------------------------------------------------------------------------------
 %	Report
@@ -338,7 +352,7 @@ s_{NN}(a|e, f) = \prod_{i = 1}^{|e|} t_{lex}(e_{i},f_{a_{i}}|e,f) t_{d}(a_{i},a_
 \pagebreak 
 \part{Report}
 
-\section{Overview about statistical alignment}
+\section{Overview about statistical alignment \cite{Och2003Systematic}}
 \subsection{General problem}
 Input:
 \begin{itemize}
@@ -350,7 +364,7 @@ Output: Alignment map $j \rightarrow i = a_j$
 \item An alignment: $a_1^J = a_1,...,a_j,...a_J$
 \end{itemize}
 
-\subsubsection{}
+\subsubsection{How to model a word alignment ?}
 Our work is modelling the relationship between a source sentence and a target sentence. \\
 We start from the view of translation model, which is finding this best translation $e_1^I$ for a source sentence $f_1^J$.
 \begin{equation}
@@ -366,8 +380,6 @@ p(f_1^J|e_1^I) = \sum_{a_1^J} p(f_1^J, a_1^J|e_1^I)
 \end{equation}
 
 With the model parameters $\theta$, our main problem becomes $p_{\theta}(f_1^J, a_1^J|e_1^I)$
-
-\subsubsection{Problem of empty word}
 
 \subsection{Hidden Markov Alignment Model}
 The alignment model is re-structured:
@@ -396,7 +408,60 @@ Therefore, $p(f_1^J, a_1^J|e_1^I)$ is decomposed under these assumptions as foll
 
 \begin{equation}
 p(f_1^J, a_1^J|e_1^I) = p(J|I) \prod_{j=1}^J p(f_j | e_{a_j}) * p(a_j | a_{j-1}, I)
+\label{AlignmentModelEquation}
 \end{equation}
+
+From this formula, we need to calculate these two components:
+\begin{itemize}
+\item $ p(f | e) $ : Translation probability
+\item $p(a_j | a_{j-1}, I)$ or $p(i | i', I)$ : HMM alignment probability
+\end{itemize}
+
+\subsubsection{Assumption about HMM alignment probability $p(a_j | a_{j-1}, I)$ or $p(i | i', I)$}
+Alignment probability depends on the difference in the alignment positions rather than on the absolute position \cite{Vogel1996HMM}.
+
+\begin{equation}
+p(i | i', I) = \frac{c(i - i')}{\sum_{i''=1}^I c(i'' - i')}
+\end{equation}
+where $c(i - i')$ is non-negative.
+
+\subsubsection{Extension: Empty word in target sentence}
+An source word could give an empty word, which is that each target word has an extra empty word. This leads to the length of target sentence being $e_{1}^{2I}$ and the empty word zone being $e_{I+1}^{2I}$. The word $e_{i}$ has an empty word $e_{i+I}$.
+
+They enforce the constraints:
+\begin{equation}
+p(i + I | i', I) = p_{0} \delta(i, i')
+\end{equation}
+\begin{equation}
+p(i + I | i' + I, I) = p_{0} \delta(i, i')
+\end{equation}
+\begin{equation}
+p(i | i' + I, I) = p(i | i', I )
+\end{equation}
+
+where $p_{0}$ is the probability of a transition to the empty word.
+
+\subsubsection{Extension: Refinement of alignment}
+
+\begin{itemize}
+\item Purpose: Add more assumptions that $p(a_j | a_{j-1}, I)$ depends on $e_{a_{j -1}}$ or $f_j$.
+\item Problem: In the case of large corpora or large size of vocabulary, it leads to a large alignment parameters.
+\item Solution: They use classes G which are the mappings of words to classes.
+\end{itemize}
+
+\section{Word alignment model in Neural Network}
+We start from this formula \ref{AlignmentModelEquation}:
+
+\begin{equation}
+p(f_1^J, a_1^J|e_1^I) = p(J|I) \prod_{j=1}^J p(f_j | e_{a_j}) * p(a_j | a_{j-1}, I)
+\end{equation}
+
+In general, we try to calculate these probability by using two different neural networks.
+The significant point of NN is Context.
+
+\subsection{Non-probability approach, we use score}
+The papers include \cite{Yang13word}, \cite{Tamura14recurrent}.
+
 
 
 

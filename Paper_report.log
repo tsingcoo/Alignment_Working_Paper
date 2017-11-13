@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.4.15)  10 NOV 2017 18:23
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.4.15)  13 NOV 2017 17:11
 entering extended mode
  %&-line parsing enabled.
 **Paper_report.tex
@@ -148,20 +148,26 @@ LaTeX Font Info:    ... okay on input line 19.
 \everyMPtoPDFconversion=\toks21
 ) (./Paper_report.toc [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (10.08525pt too wide) in paragraph at lines 33--33
+ [][] []\OT1/cmr/m/n/10 Assumption about HMM align-ment prob-a-bil-ity $\OML/cm
+m/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it
+/10 a[]; I\OT1/cmr/m/n/10 )$ 
+ []
+
+)
 \tf@toc=\write3
 \openout3 = `Paper_report.toc'.
 
-
-[2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 51.
+ [2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 43.
  (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 43.
 
-Overfull \hbox (18.13988pt too wide) detected at line 64
+Overfull \hbox (18.13988pt too wide) detected at line 56
 \OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = [] \OM
 L/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X; Z\OT1/cmr/m/n/10 ) = \OML/c
 mm/m/it/10 E[]\OT1/cmr/m/n/10 [[] \OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m
@@ -174,29 +180,29 @@ t/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Z\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 X;
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
 
-Overfull \hbox (31.6809pt too wide) in paragraph at lines 116--117
+Overfull \hbox (31.6809pt too wide) in paragraph at lines 108--109
 []\OT1/cmr/m/n/10 Input: A sen-tence $\OML/cmm/m/it/10 X \OT1/cmr/m/n/10 = \OML
 /cmm/m/it/10 x[]; :::; x[]; :::x[]$\OT1/cmr/m/n/10 , a set of vo-cab-u-lary $\O
 ML/cmm/m/it/10 W \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 w[]; :::; w[]; :::w[]$
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 127--130
+Underfull \hbox (badness 10000) in paragraph at lines 119--122
 
  []
 
 [5] [6] [7]
-Overfull \hbox (87.23282pt too wide) detected at line 256
+Overfull \hbox (87.23282pt too wide) detected at line 248
 \OML/cmm/m/it/10 Loss[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^R[]\OMS/cmsy/m/n/10 
 j\OML/cmm/m/it/10 W\OT1/cmr/m/n/10 ) = \OMS/cmsy/m/n/10 ^^@[] [] [] \OML/cmm/m/
 it/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 source \OT1/cmr/m/n/10 = \OML/cmm/m/
@@ -207,7 +213,7 @@ OT1/cmr/m/n/10 )
  []
 
 
-Overfull \hbox (89.0763pt too wide) detected at line 262
+Overfull \hbox (89.0763pt too wide) detected at line 254
 \OML/cmm/m/it/10 Loss[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 W\OMS/cmsy/m/n/10 j\OM
 L/cmm/m/it/10 ^^R[]\OT1/cmr/m/n/10 ) = \OMS/cmsy/m/n/10 ^^@[] [] [] \OML/cmm/m/
 it/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 source \OT1/cmr/m/n/10 = \OML/cmm/m/
@@ -218,13 +224,13 @@ OT1/cmr/m/n/10 )
  []
 
 [8]
-Overfull \hbox (3.77843pt too wide) in paragraph at lines 277--280
+Overfull \hbox (3.77843pt too wide) in paragraph at lines 269--272
 []\OT1/cmr/m/n/10 Stopping con-di-tion/Best hyper-parameters se-lec-tion - Val-
 i-da-tion step: Sim-
  []
 
 [9]
-Overfull \hbox (21.33069pt too wide) detected at line 330
+Overfull \hbox (21.33069pt too wide) detected at line 322
 \OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]; a[]\OMS/cmsy/m/n/10 
 j\OML/cmm/m/it/10 e; f\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 (
 \OML/cmm/m/it/10 a[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 
@@ -234,36 +240,36 @@ j\OML/cmm/m/it/10 window\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 ))
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 362--363
+Underfull \hbox (badness 10000) in paragraph at lines 374--375
 
  []
 
-[11] [12] (./Paper_report.bbl) [13] (./Paper_report.aux) ) 
+[11] [12] [13] (./Paper_report.bbl) [14] (./Paper_report.aux) ) 
 Here is how much of TeX's memory you used:
- 1887 strings out of 493848
- 22778 string characters out of 1152823
- 82649 words of memory out of 3000000
- 5180 multiletter control sequences out of 15000+50000
+ 1894 strings out of 493848
+ 22952 string characters out of 1152823
+ 82689 words of memory out of 3000000
+ 5187 multiletter control sequences out of 15000+50000
  9676 words of font info for 35 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  27i,6n,28p,366b,259s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-tex
-live/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/
-type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/publi
-c/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
-cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi5.pf
-b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/shar
-e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texl
-ive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/ty
-pe1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/a
-msfonts/cm/cmr5.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
-r7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
-r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texm
-f-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fo
-nts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Paper_report.pdf (13 pages, 224672 bytes).
+</usr/share/texm
+f-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/
+public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
+onts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmm
+i5.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf
+-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fon
+ts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/pub
+lic/amsfonts/cm/cmr5.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
+cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texli
+ve/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Paper_report.pdf (14 pages, 230367 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
+ 108 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

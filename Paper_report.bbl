@@ -10,10 +10,22 @@ H.~{Ghader} and C.~{Monz}.
 \newblock {What does Attention in Neural Machine Translation Pay Attention to?}
 \newblock {\em ArXiv e-prints}, October 2017.
 
+\bibitem{Och2003Systematic}
+Franz~Josef Och and Hermann Ney.
+\newblock A systematic comparison of various statistical alignment models.
+\newblock {\em Comput. Linguist.}, 29(1):19--51, March 2003.
+
 \bibitem{Rikters2017confidence}
 M.~{Rikters} and M.~{Fishel}.
 \newblock {Confidence through Attention}.
 \newblock {\em ArXiv e-prints}, October 2017.
+
+\bibitem{Tamura14recurrent}
+Akihiro Tamura, Taro Watanabe, and Eiichiro Sumita.
+\newblock Recurrent neural networks for word alignment model.
+\newblock In {\em Proceedings of the 52nd Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers)}, pages 1470--1480,
+  Baltimore, Maryland, June 2014. Association for Computational Linguistics.
 
 \bibitem{Tran16unsupervised}
 M.~Ke Tran, Yonatan Bisk, Ashish Vaswani, Daniel Marcu, and Kevin Knight.
