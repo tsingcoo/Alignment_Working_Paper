@@ -63,7 +63,7 @@ This research show how to apply unsupervised hidden Markov model in neural netwo
 \item Result: Gradient of the joint probability scaled by the posteriors
 	\begin{equation}
 	J(\theta) = \sum_{Z} p(Z|X) \dfrac{\partial}{\partial\theta} \ln p(X,Z| \theta)
-	\label{GradientJointProbability} 
+	\label{Tran16unsupervisedGradientJointProbability} 
 	\end{equation}
 \item Problem: How to calculate $p(X,Z)$ ?
 \end{itemize}
@@ -79,10 +79,10 @@ This research show how to apply unsupervised hidden Markov model in neural netwo
 \item Therefore, the probability of a given sequence of observation X and latent variables Z (Factorization of the joint probability):
 	\begin{equation}
 	p(X,Z) = \prod_{t=1}^{n + 1} p(z_{t}|z_{t-1})\prod_{t=1}^{n} p(x_{t}|z_{t})
-	\label{ProbabilityHMM}
+	\label{Tran16unsupervisedProbabilityHMM}
 	\end{equation}
 	
-\item Result: Combine $p(X,Z)$ \eqref{ProbabilityHMM} and gradient $J(\theta)$ \eqref{GradientJointProbability}
+\item Result: Combine $p(X,Z)$ \eqref{Tran16unsupervisedProbabilityHMM} and gradient $J(\theta)$ \eqref{Tran16unsupervisedGradientJointProbability}
 
 $J(\theta) = \sum_{Z} p(Z|X) \dfrac{\partial}{\partial\theta} \ln p(X,Z| \theta)$ \\
 
@@ -309,12 +309,16 @@ They propose using a score instead of these probabilities because they would lik
 
 \begin{equation}
 s_{NN}(a|e, f) = \prod_{i = 1}^{|e|} t_{lex}(e_{i},f_{a_{i}}|e,f) t_{d}(a_{i},a_{i-1}|e,f)
+\label{Yang13wordNNAlignmentScore}
 \end{equation}
+
 	\begin{itemize}
+	\item $s_{NN}(a|e, f)$ is the score of an alignment based on the source and target sentence.
 	\item $f_{a_{i}}$ represents not only this word but the context around this word. Surrounding words of both source and target word are input of DNN, which is handling the context of both sides. This could reduce the explosion of parameter number. \\ In this case, they use fixed length windows surrounding both $e_{i}$ and $f_{j}$. 
 	\item $t_{lex}$: Lexical translation score.
 	\begin{equation}
 	t_{lex}(e_{i},f_{j}|e,f) = functions_{NN}(window(e_{i}),window(f_{j}) )
+	\label{Yang13wordLexicalTranslationScore}
 	\end{equation}
 	\item $t_{d}$: Distortion score.
 	\begin{equation}
@@ -325,8 +329,41 @@ s_{NN}(a|e, f) = \prod_{i = 1}^{|e|} t_{lex}(e_{i},f_{a_{i}}|e,f) t_{d}(a_{i},a_
 	t_{d}(a_{i}, a_{i-1}|e,f) = t_{d}(a_{i} - a_{i-1})
 	\end{equation}
 	\end{itemize}
-	
-\subsection{Result}
+
+\subsection{Loss in supervised learning}
+\begin{equation}
+loss(\theta) = \sum_{every(\textbf{e},\textbf{f})} \max(0 , 1 - s_{\theta}(a^+ |\textbf{e},\textbf{f}) + s_{\theta}(a^- |\textbf{e},\textbf{f}) )
+\label{Yang13wordAlignmentLoss}
+\end{equation}
+where
+\begin{itemize}
+\item $a^+$: Gold alignment path
+\item $a^-$: Highest scoring incorrect alignment path under $\theta$
+\item $s_\theta$: Score for alignment path defined in \eqref{Yang13wordNNAlignmentScore}
+\end{itemize}
+
+\subsection{Analysis}
+\subsubsection{Two loss functions during training}
+They pre-train word embedding with monolingual data.
+They train firstly NN with the loss from lexical translation score and then the loss \eqref{Yang13wordAlignmentLoss} because they recognize that using only the loss \eqref{Yang13wordAlignmentLoss} is not efficient.
+
+The loss of lexical translation score:
+\begin{equation}
+loss(\theta) = \sum_{every(\textbf{e},\textbf{f})} \max(0 , 1 - t_{lex, \theta}((e,f)^+ | \textbf{e},\textbf{f}) + t_{lex, \theta}((e,f)^- | \textbf{e},\textbf{f}) )
+\end{equation}
+where
+\begin{itemize}
+\item $(e,f)^+$: Correct word pair
+\item $(e,f)^-$: Incorrect word pair
+\item $t_{lex}$: Score of \eqref{Yang13wordLexicalTranslationScore}
+\end{itemize}
+
+\subsubsection{Result}
+Baselines are HMM and IBM4. IBM4+NN takes the first place, followed by IBM4 and then HMM+NN.
+
+\subsubsection{Notes}
+They conclude also that the size of window influence on the accuracy of translation score.
+The large number of hidden layer does not return any improvement.
 
 %----------------------------------------------------------------------------------------
 %	Recurrent Neural Networks for Word Alignment Model
@@ -334,9 +371,55 @@ s_{NN}(a|e, f) = \prod_{i = 1}^{|e|} t_{lex}(e_{i},f_{a_{i}}|e,f) t_{d}(a_{i},a_
 \section{Recurrent Neural Networks for Word Alignment Model \citep{Tamura14recurrent}}
 
 \subsection{Main idea}
-This research is mainly based on \citep{Yang13word}. The difference is that the alignment score is calculated in recurrent approach RNNs, which means that $a_j$ depends on all previous position $a_{0...j-1}$.
+This research is mainly based on \citep{Yang13word}. The difference is that the score of alignment is calculated in recurrent approach RNNs, which means that $a_j$ depends on all previous position $a_{0...j-1}$.
+The score of an alignment in \citep{Yang13word} has two components: One is for lexical translation and the other is for alignment. This research proposes a single score.
 
 \subsection{How does RNNs work in calculating alignment score ?}
+
+The equation of \citep{Yang13word} (Reverse the source and the target sentence)
+\begin{equation}
+s_{NN}(a_1^ J|e_1^ I, f_1^ J) = \prod_{j = 1}^{J} t_{d}(a_{j},a_{j-1}|window(e_{a_{j-1}})) *t_{lex}(f_{j},e_{a_{j}}|window(e_{a_{j}}), window(f_{j}))
+\end{equation}
+
+It is modified for RNNs:
+
+\begin{equation}
+s_{NN}(a_1^ J|e_1^ I, f_1^ J) = \prod_{j = 1}^{J} t_{RNN}(a_{j}|a_1^{j-1},e_{a_{j}},f_j  )
+\end{equation}
+
+\subsection{Loss in unsupervised learning} 
+\begin{equation}
+loss(\theta) = max(0 , 1 - \sum_{(\textbf{f}^+,\textbf{e}^+) \in T} E_{\Phi} [s_{\theta} (\textbf{a}|\textbf{f}^+, \textbf{e}^+)]  + \sum_{(\textbf{f}^+,\textbf{e}^-) \in \Omega} E_{\Phi} [s_{\theta} (\textbf{a}|\textbf{f}^+, \textbf{e}^-)] )
+\label{Tamura14recurrentLossUnsupervisedLearning}
+\end{equation}
+where
+\begin{itemize}
+\item T: Training data (Bilingual sentences) as Observed data
+\item $\Omega$ : Full translation search space as neighbourhood of observe data, .
+\item $\Phi$ : Set of all possible alignments given (\textbf{e},\textbf{f})
+\item $E_{\Phi} [s_{\theta}]$ : Expected value of the scores $s_\theta$ on $\Phi$
+\item $e^+$ : A target language sentence in T
+\item $e^-$ : A pseudo-target language sentence
+\item $\sum_{(\textbf{f}^+,\textbf{e}^+) \in T} E_{\Phi} [s_{\theta} (\textbf{a}|\textbf{f}^+, \textbf{e}^+)]$ : Expectation term for observed data
+\item$ \sum_{(\textbf{f}^+,\textbf{e}^-) \in \Omega} E_{\Phi} [s_{\theta} (\textbf{a}|\textbf{f}^+, \textbf{e}^-)] )$ : Expectation term for neighbourhood
+\end{itemize}
+
+They would like to reduce the computation, they randomly select N pseudo-target language sentences for each $f^+$. \eqref{Tamura14recurrentLossUnsupervisedLearning} becomes:
+\begin{equation}
+loss(\theta) = \sum_{\textbf{f}^+ \in T} max(0 , 1 -  E_{GEN} [s_{\theta} (\textbf{a}|\textbf{f}^+, \textbf{e}^+)]  + \frac{1}{N} \sum_{\textbf{e}^-} E_{GEN} [s_{\theta} (\textbf{a}|\textbf{f}^+, \textbf{e}^-)] )
+\end{equation}
+where
+\begin{itemize}
+\item $\textbf{e}^-$ : a pseudo-target language sentence with the same length $|\textbf{e}^-| = |\textbf{e}^+|$
+\item GEN: A subset of all possible alignment generated by beam search
+\end{itemize}
+
+\subsection{Agreement constraints} 
+\subsection{Analysis} 
+
+
+
+
 
 
 
@@ -352,8 +435,9 @@ This research is mainly based on \citep{Yang13word}. The difference is that the 
 \pagebreak 
 \part{Report}
 
-\section{Overview about statistical alignment \cite{Och2003Systematic}}
-\subsection{General problem}
+\section{Overview about statistical alignment }
+
+\subsection{Word-based alignment ? \cite{Och2003Systematic}}
 Input:
 \begin{itemize}
 \item A source sentence: $f_1^J = f_1,...,f_j,...f_J$
@@ -364,7 +448,7 @@ Output: Alignment map $j \rightarrow i = a_j$
 \item An alignment: $a_1^J = a_1,...,a_j,...a_J$
 \end{itemize}
 
-\subsubsection{How to model a word alignment ?}
+
 Our work is modelling the relationship between a source sentence and a target sentence. \\
 We start from the view of translation model, which is finding this best translation $e_1^I$ for a source sentence $f_1^J$.
 \begin{equation}
@@ -408,7 +492,7 @@ Therefore, $p(f_1^J, a_1^J|e_1^I)$ is decomposed under these assumptions as foll
 
 \begin{equation}
 p(f_1^J, a_1^J|e_1^I) = p(J|I) \prod_{j=1}^J p(f_j | e_{a_j}) * p(a_j | a_{j-1}, I)
-\label{AlignmentModelEquation}
+\label{Och2003SystematicAlignmentModelEquation}
 \end{equation}
 
 From this formula, we need to calculate these two components:
@@ -450,7 +534,7 @@ where $p_{0}$ is the probability of a transition to the empty word.
 \end{itemize}
 
 \section{Word alignment model in Neural Network}
-We start from this formula \ref{AlignmentModelEquation}:
+We start from this formula \eqref{Och2003SystematicAlignmentModelEquation}:
 
 \begin{equation}
 p(f_1^J, a_1^J|e_1^I) = p(J|I) \prod_{j=1}^J p(f_j | e_{a_j}) * p(a_j | a_{j-1}, I)
@@ -459,7 +543,11 @@ p(f_1^J, a_1^J|e_1^I) = p(J|I) \prod_{j=1}^J p(f_j | e_{a_j}) * p(a_j | a_{j-1},
 In general, we try to calculate these probability by using two different neural networks.
 The significant point of NN is Context.
 
-\subsection{Non-probability approach, we use score}
+\subsection{Probability approach}
+The papers include \cite{Tran16unsupervised}.
+
+
+\subsection{Non-probability - Score approach}
 The papers include \cite{Yang13word}, \cite{Tamura14recurrent}.
 
 
