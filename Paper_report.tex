@@ -63,7 +63,7 @@ This research show how to apply unsupervised hidden Markov model in neural netwo
 \item Result: Gradient of the joint probability scaled by the posteriors
 	\begin{equation}
 	J(\theta) = \sum_{Z} p(Z|X) \dfrac{\partial}{\partial\theta} \ln p(X,Z| \theta)
-	\label{Tran16unsupervisedGradientJointProbability} 
+	\label{Tran16unsupervised Gradient Joint Probability} 
 	\end{equation}
 \item Problem: How to calculate $p(X,Z)$ ?
 \end{itemize}
@@ -79,10 +79,10 @@ This research show how to apply unsupervised hidden Markov model in neural netwo
 \item Therefore, the probability of a given sequence of observation X and latent variables Z (Factorization of the joint probability):
 	\begin{equation}
 	p(X,Z) = \prod_{t=1}^{n + 1} p(z_{t}|z_{t-1})\prod_{t=1}^{n} p(x_{t}|z_{t})
-	\label{Tran16unsupervisedProbabilityHMM}
+	\label{Tran16unsupervised Probability HMM}
 	\end{equation}
 	
-\item Result: Combine $p(X,Z)$ \eqref{Tran16unsupervisedProbabilityHMM} and gradient $J(\theta)$ \eqref{Tran16unsupervisedGradientJointProbability}
+\item Result: Combine $p(X,Z)$ \eqref{Tran16unsupervised Probability HMM} and gradient $J(\theta)$ \eqref{Tran16unsupervised Gradient Joint Probability}
 
 $J(\theta) = \sum_{Z} p(Z|X) \dfrac{\partial}{\partial\theta} \ln p(X,Z| \theta)$ \\
 
@@ -283,6 +283,15 @@ Two steps of training:
 \end{enumerate}
 
 %----------------------------------------------------------------------------------------
+%	Alignment by agreement
+%----------------------------------------------------------------------------------------
+\section{Alignment by Agreement \citep{Liang2006Alignment}}
+
+
+
+
+
+%----------------------------------------------------------------------------------------
 %	Word Alignment Modeling with Context Dependent Deep Neural Network
 %----------------------------------------------------------------------------------------
 
@@ -309,7 +318,7 @@ They propose using a score instead of these probabilities because they would lik
 
 \begin{equation}
 s_{NN}(a|e, f) = \prod_{i = 1}^{|e|} t_{lex}(e_{i},f_{a_{i}}|e,f) t_{d}(a_{i},a_{i-1}|e,f)
-\label{Yang13wordNNAlignmentScore}
+\label{Yang13word NN Alignment Score}
 \end{equation}
 
 	\begin{itemize}
@@ -318,7 +327,7 @@ s_{NN}(a|e, f) = \prod_{i = 1}^{|e|} t_{lex}(e_{i},f_{a_{i}}|e,f) t_{d}(a_{i},a_
 	\item $t_{lex}$: Lexical translation score.
 	\begin{equation}
 	t_{lex}(e_{i},f_{j}|e,f) = functions_{NN}(window(e_{i}),window(f_{j}) )
-	\label{Yang13wordLexicalTranslationScore}
+	\label{Yang13word Lexical Translation Score}
 	\end{equation}
 	\item $t_{d}$: Distortion score.
 	\begin{equation}
@@ -333,19 +342,19 @@ s_{NN}(a|e, f) = \prod_{i = 1}^{|e|} t_{lex}(e_{i},f_{a_{i}}|e,f) t_{d}(a_{i},a_
 \subsection{Loss in supervised learning}
 \begin{equation}
 loss(\theta) = \sum_{every(\textbf{e},\textbf{f})} \max(0 , 1 - s_{\theta}(a^+ |\textbf{e},\textbf{f}) + s_{\theta}(a^- |\textbf{e},\textbf{f}) )
-\label{Yang13wordAlignmentLoss}
+\label{Yang13word Alignment Loss}
 \end{equation}
 where
 \begin{itemize}
 \item $a^+$: Gold alignment path
 \item $a^-$: Highest scoring incorrect alignment path under $\theta$
-\item $s_\theta$: Score for alignment path defined in \eqref{Yang13wordNNAlignmentScore}
+\item $s_\theta$: Score for alignment path defined in \eqref{Yang13word NN Alignment Score}
 \end{itemize}
 
 \subsection{Analysis}
 \subsubsection{Two loss functions during training}
 They pre-train word embedding with monolingual data.
-They train firstly NN with the loss from lexical translation score and then the loss \eqref{Yang13wordAlignmentLoss} because they recognize that using only the loss \eqref{Yang13wordAlignmentLoss} is not efficient.
+They train firstly NN with the loss from lexical translation score and then the loss \eqref{Yang13word Alignment Loss} because they recognize that using only the loss \eqref{Yang13word Alignment Loss} is not efficient.
 
 The loss of lexical translation score:
 \begin{equation}
@@ -355,7 +364,7 @@ where
 \begin{itemize}
 \item $(e,f)^+$: Correct word pair
 \item $(e,f)^-$: Incorrect word pair
-\item $t_{lex}$: Score of \eqref{Yang13wordLexicalTranslationScore}
+\item $t_{lex}$: Score of \eqref{Yang13word Lexical Translation Score}
 \end{itemize}
 
 \subsubsection{Result}
@@ -390,7 +399,7 @@ s_{NN}(a_1^ J|e_1^ I, f_1^ J) = \prod_{j = 1}^{J} t_{RNN}(a_{j}|a_1^{j-1},e_{a_{
 \subsection{Loss in unsupervised learning} 
 \begin{equation}
 loss(\theta) = max(0 , 1 - \sum_{(\textbf{f}^+,\textbf{e}^+) \in T} E_{\Phi} [s_{\theta} (\textbf{a}|\textbf{f}^+, \textbf{e}^+)]  + \sum_{(\textbf{f}^+,\textbf{e}^-) \in \Omega} E_{\Phi} [s_{\theta} (\textbf{a}|\textbf{f}^+, \textbf{e}^-)] )
-\label{Tamura14recurrentLossUnsupervisedLearning}
+\label{Tamura14recurrent Loss Unsupervised Learning}
 \end{equation}
 where
 \begin{itemize}
@@ -404,7 +413,7 @@ where
 \item$ \sum_{(\textbf{f}^+,\textbf{e}^-) \in \Omega} E_{\Phi} [s_{\theta} (\textbf{a}|\textbf{f}^+, \textbf{e}^-)] )$ : Expectation term for neighbourhood
 \end{itemize}
 
-They would like to reduce the computation, they randomly select N pseudo-target language sentences for each $f^+$. \eqref{Tamura14recurrentLossUnsupervisedLearning} becomes:
+They would like to reduce the computation, they randomly select N pseudo-target language sentences for each $f^+$. \eqref{Tamura14recurrent Loss Unsupervised Learning} becomes:
 \begin{equation}
 loss(\theta) = \sum_{\textbf{f}^+ \in T} max(0 , 1 -  E_{GEN} [s_{\theta} (\textbf{a}|\textbf{f}^+, \textbf{e}^+)]  + \frac{1}{N} \sum_{\textbf{e}^-} E_{GEN} [s_{\theta} (\textbf{a}|\textbf{f}^+, \textbf{e}^-)] )
 \end{equation}
@@ -414,8 +423,40 @@ where
 \item GEN: A subset of all possible alignment generated by beam search
 \end{itemize}
 
-\subsection{Agreement constraints} 
+\subsection{Agreement constraints}
+\marginpar{See \citep{Liang2006Alignment}}
+
+Why: HMM-based model is asymmetric. It is demonstrated that encouraging directional models to agree improves alignment performance.
+\\
+How: They propose training two directional models including alignment F$\rightarrow$E and E$\rightarrow$F. Each model has a different modified loss function 
+
+\begin{equation}
+loss_{\theta_{F \rightarrow E}} = loss(\theta_{F \rightarrow E})  + \alpha \parallel \theta_{E \rightarrow F} - \theta_{F \rightarrow E} \parallel
+\end{equation}
+
+\begin{equation}
+loss_{\theta_{E \rightarrow F}} = loss(\theta_{E \rightarrow F})  + \alpha \parallel \theta_{F \rightarrow E} - \theta_{E \rightarrow F} \parallel
+\end{equation}
+
+where
+\begin{itemize}
+\item $\theta_{E \rightarrow F}$ : Weight of layers in model $E \rightarrow F$
+\item $\alpha$: Weight parameter of the agreement constraint $\parallel \theta_{E \rightarrow F} - \theta_{F \rightarrow E} \parallel$
+\item $\parallel \theta \parallel$: Norm of $\theta$
+\item $loss(\theta_{F \rightarrow E})$: Loss from \eqref{Tamura14recurrent Loss Unsupervised Learning}
+\end{itemize}
+
+
 \subsection{Analysis} 
+Baselines are IBM4, FFNN \citep{Yang13word}. They do the experiments of word alignment and machine translation in both unsupervised/supervised learning.
+
+\subsubsection{Result}
+RNNs captures alignment paths based on long alignment history. This can be viewed as phrase-level alignment, which is more effective in non-similar-order-language (Japanese-English) than French-English.\\
+
+RNNs could help to reduce the size of training data. They show the similar results between RNNs-Small data and IBM4-Large data.\\
+
+They highlight the role of agreement constraints in alignment performance improvement.\\
+
 
 
 
@@ -465,7 +506,7 @@ p(f_1^J|e_1^I) = \sum_{a_1^J} p(f_1^J, a_1^J|e_1^I)
 
 With the model parameters $\theta$, our main problem becomes $p_{\theta}(f_1^J, a_1^J|e_1^I)$
 
-\subsection{Hidden Markov Alignment Model}
+\subsection{Hidden Markov Alignment Model \cite{Och2003Systematic}}
 The alignment model is re-structured:
 \begin{equation}
 p(f_1^J, a_1^J|e_1^I) = p(J|e_1^I) \prod_{j=1}^J p(f_j, a_j | f_1^{j-1}, a_1^{j-1}, e_1^I)
@@ -492,7 +533,7 @@ Therefore, $p(f_1^J, a_1^J|e_1^I)$ is decomposed under these assumptions as foll
 
 \begin{equation}
 p(f_1^J, a_1^J|e_1^I) = p(J|I) \prod_{j=1}^J p(f_j | e_{a_j}) * p(a_j | a_{j-1}, I)
-\label{Och2003SystematicAlignmentModelEquation}
+\label{Och2003Systematic Alignment Model Equation}
 \end{equation}
 
 From this formula, we need to calculate these two components:
@@ -534,24 +575,33 @@ where $p_{0}$ is the probability of a transition to the empty word.
 \end{itemize}
 
 \section{Word alignment model in Neural Network}
-We start from this formula \eqref{Och2003SystematicAlignmentModelEquation}:
+We start from this formula \eqref{Och2003Systematic Alignment Model Equation}:
 
 \begin{equation}
 p(f_1^J, a_1^J|e_1^I) = p(J|I) \prod_{j=1}^J p(f_j | e_{a_j}) * p(a_j | a_{j-1}, I)
+\label{Word Alignment Model Neural Network HMM Equation}
 \end{equation}
 
 In general, we try to calculate these probability by using two different neural networks.
-The significant point of NN is Context.
+The significant point of NN is embedding context.
 
 \subsection{Probability approach}
-The papers include \cite{Tran16unsupervised}.
+Unsupervised neural HMM of \cite{Tran16unsupervised} shows how to apply NN in HMM. \eqref{Word Alignment Model Neural Network HMM Equation} becomes:
+\begin{equation}
+p(f_1^J, a_1^J|e_1^I) = \prod_{j=1}^J p(f_j | e_{a_j}) * p(a_j | a_{j-1}, I)
+\end{equation}
+
+
+
+
 
 
 \subsection{Non-probability - Score approach}
-The papers include \cite{Yang13word}, \cite{Tamura14recurrent}.
+The papers are \cite{Yang13word}, \cite{Tamura14recurrent}.
 
+\section{Techniques in Alignment}
 
-
+\subsection{Agreement between models}
 
 \section{Evaluation of a translation/alignment}
 \begin{enumerate}

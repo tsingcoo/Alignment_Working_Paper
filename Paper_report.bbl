@@ -10,6 +10,14 @@ H.~{Ghader} and C.~{Monz}.
 \newblock {What does Attention in Neural Machine Translation Pay Attention to?}
 \newblock {\em ArXiv e-prints}, October 2017.
 
+\bibitem{Liang2006Alignment}
+Percy Liang, Ben Taskar, and Dan Klein.
+\newblock Alignment by agreement.
+\newblock In {\em Proceedings of the Main Conference on Human Language
+  Technology Conference of the North American Chapter of the Association of
+  Computational Linguistics}, HLT-NAACL '06, pages 104--111, Stroudsburg, PA,
+  USA, 2006. Association for Computational Linguistics.
+
 \bibitem{Och2003Systematic}
 Franz~Josef Och and Hermann Ney.
 \newblock A systematic comparison of various statistical alignment models.

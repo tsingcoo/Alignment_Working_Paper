@@ -18,28 +18,32 @@
 \contentsline {section}{\numberline {4}Word Translation without Parallel data \citep {Conneau2017Word}}{8}
 \contentsline {subsection}{\numberline {4.1}Main idea}{8}
 \contentsline {subsection}{\numberline {4.2}How does it works ?}{8}
-\contentsline {section}{\numberline {5}Word Alignment Modeling with Context Dependent Deep Neural Network \citep {Yang13word}}{9}
-\contentsline {subsection}{\numberline {5.1}Main idea}{9}
-\contentsline {subsection}{\numberline {5.2}How does DNN work in word alignment ?}{9}
-\contentsline {subsection}{\numberline {5.3}Loss in supervised learning}{10}
-\contentsline {subsection}{\numberline {5.4}Analysis}{11}
-\contentsline {subsubsection}{\numberline {5.4.1}Two loss functions during training}{11}
-\contentsline {subsubsection}{\numberline {5.4.2}Result}{11}
-\contentsline {subsubsection}{\numberline {5.4.3}Notes}{11}
-\contentsline {section}{\numberline {6}Recurrent Neural Networks for Word Alignment Model \citep {Tamura14recurrent}}{11}
-\contentsline {subsection}{\numberline {6.1}Main idea}{11}
-\contentsline {subsection}{\numberline {6.2}How does RNNs work in calculating alignment score ?}{11}
-\contentsline {subsection}{\numberline {6.3}Loss in unsupervised learning}{12}
-\contentsline {subsection}{\numberline {6.4}Agreement constraints}{12}
-\contentsline {subsection}{\numberline {6.5}Analysis}{12}
-\contentsline {part}{II\hspace {1em}Report}{13}
-\contentsline {section}{\numberline {7}Overview about statistical alignment }{13}
-\contentsline {subsection}{\numberline {7.1}Word-based alignment ? \cite {Och2003Systematic}}{13}
-\contentsline {subsection}{\numberline {7.2}Hidden Markov Alignment Model}{13}
-\contentsline {subsubsection}{\numberline {7.2.1}Assumption about HMM alignment probability $p(a_j | a_{j-1}, I)$ or $p(i | i', I)$}{14}
-\contentsline {subsubsection}{\numberline {7.2.2}Extension: Empty word in target sentence}{14}
-\contentsline {subsubsection}{\numberline {7.2.3}Extension: Refinement of alignment}{15}
-\contentsline {section}{\numberline {8}Word alignment model in Neural Network}{15}
-\contentsline {subsection}{\numberline {8.1}Probability approach}{15}
-\contentsline {subsection}{\numberline {8.2}Non-probability - Score approach}{15}
-\contentsline {section}{\numberline {9}Evaluation of a translation/alignment}{15}
+\contentsline {section}{\numberline {5}Alignment by Agreement \citep {Liang2006Alignment}}{9}
+\contentsline {section}{\numberline {6}Word Alignment Modeling with Context Dependent Deep Neural Network \citep {Yang13word}}{9}
+\contentsline {subsection}{\numberline {6.1}Main idea}{9}
+\contentsline {subsection}{\numberline {6.2}How does DNN work in word alignment ?}{9}
+\contentsline {subsection}{\numberline {6.3}Loss in supervised learning}{10}
+\contentsline {subsection}{\numberline {6.4}Analysis}{11}
+\contentsline {subsubsection}{\numberline {6.4.1}Two loss functions during training}{11}
+\contentsline {subsubsection}{\numberline {6.4.2}Result}{11}
+\contentsline {subsubsection}{\numberline {6.4.3}Notes}{11}
+\contentsline {section}{\numberline {7}Recurrent Neural Networks for Word Alignment Model \citep {Tamura14recurrent}}{11}
+\contentsline {subsection}{\numberline {7.1}Main idea}{11}
+\contentsline {subsection}{\numberline {7.2}How does RNNs work in calculating alignment score ?}{11}
+\contentsline {subsection}{\numberline {7.3}Loss in unsupervised learning}{12}
+\contentsline {subsection}{\numberline {7.4}Agreement constraints}{12}
+\contentsline {subsection}{\numberline {7.5}Analysis}{13}
+\contentsline {subsubsection}{\numberline {7.5.1}Result}{13}
+\contentsline {part}{II\hspace {1em}Report}{14}
+\contentsline {section}{\numberline {8}Overview about statistical alignment }{14}
+\contentsline {subsection}{\numberline {8.1}Word-based alignment ? \cite {Och2003Systematic}}{14}
+\contentsline {subsection}{\numberline {8.2}Hidden Markov Alignment Model \cite {Och2003Systematic}}{14}
+\contentsline {subsubsection}{\numberline {8.2.1}Assumption about HMM alignment probability $p(a_j | a_{j-1}, I)$ or $p(i | i', I)$}{15}
+\contentsline {subsubsection}{\numberline {8.2.2}Extension: Empty word in target sentence}{15}
+\contentsline {subsubsection}{\numberline {8.2.3}Extension: Refinement of alignment}{16}
+\contentsline {section}{\numberline {9}Word alignment model in Neural Network}{16}
+\contentsline {subsection}{\numberline {9.1}Probability approach}{16}
+\contentsline {subsection}{\numberline {9.2}Non-probability - Score approach}{16}
+\contentsline {section}{\numberline {10}Techniques in Alignment}{16}
+\contentsline {subsection}{\numberline {10.1}Agreement between models}{16}
+\contentsline {section}{\numberline {11}Evaluation of a translation/alignment}{16}

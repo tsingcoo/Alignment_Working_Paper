@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.4.15)  14 NOV 2017 17:23
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.4.15)  15 NOV 2017 17:07
 entering extended mode
  %&-line parsing enabled.
 **Paper_report.tex
@@ -149,7 +149,7 @@ LaTeX Font Info:    ... okay on input line 19.
 ) (./Paper_report.toc [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (10.08525pt too wide) in paragraph at lines 39--39
+Overfull \hbox (10.08525pt too wide) in paragraph at lines 41--41
  [][] []\OT1/cmr/m/n/10 Assumption about HMM align-ment prob-a-bil-ity $\OML/cm
 m/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it
 /10 a[]; I\OT1/cmr/m/n/10 )$ 
@@ -230,7 +230,7 @@ i-da-tion step: Sim-
  []
 
 [9]
-Overfull \hbox (21.33069pt too wide) detected at line 326
+Overfull \hbox (21.33069pt too wide) detected at line 335
 \OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]; a[]\OMS/cmsy/m/n/10 
 j\OML/cmm/m/it/10 e; f\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 (
 \OML/cmm/m/it/10 a[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 
@@ -240,7 +240,7 @@ j\OML/cmm/m/it/10 window\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 ))
  []
 
 [10]
-Overfull \hbox (34.9597pt too wide) detected at line 382
+Overfull \hbox (34.9597pt too wide) detected at line 391
 \OML/cmm/m/it/10 s[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\OML
 /cmm/m/it/10 e[]; f[]\OT1/cmr/m/n/10 ) = [] \OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10
  (\OML/cmm/m/it/10 a[]; a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 window\OT1/cmr/m/
@@ -251,16 +251,31 @@ t/10 window\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 e[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/
  []
 
 [11] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 454--455
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 456--457
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 458--459
 
  []
 
-[13] [14] [15] (./Paper_report.bbl) [16] (./Paper_report.aux) ) 
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 499--500
+
+ []
+
+[14] [15] [16] (./Paper_report.bbl) [17] (./Paper_report.aux) ) 
 Here is how much of TeX's memory you used:
- 1902 strings out of 493848
- 23174 string characters out of 1152823
- 82729 words of memory out of 3000000
- 5193 multiletter control sequences out of 15000+50000
+ 1906 strings out of 493848
+ 23321 string characters out of 1152823
+ 82754 words of memory out of 3000000
+ 5197 multiletter control sequences out of 15000+50000
  10295 words of font info for 37 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  27i,6n,28p,366b,259s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -279,9 +294,9 @@ lic/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
 /texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-texli
 ve/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/typ
 e1/public/amsfonts/cm/cmti10.pfb>
-Output written on Paper_report.pdf (16 pages, 246002 bytes).
+Output written on Paper_report.pdf (17 pages, 252050 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
+ 121 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
