@@ -501,10 +501,15 @@ In this case, the translation direction is changed from $p(e_1^I|f_1^J)$ to $p(f
 From now, the work of translation is modelling $p(f_1^J|e_1^I)$. Our work is more complicated by adding an alignment component $a_1^J$ which maps from a source position j to a target position $a_j$ (It could be i, but there is also empty words).
 
 \begin{equation}
-p(f_1^J|e_1^I) = \sum_{a_1^J} p(f_1^J, a_1^J|e_1^I)
 \end{equation}
 
 With the model parameters $\theta$, our main problem becomes $p_{\theta}(f_1^J, a_1^J|e_1^I)$
+
+\begin{equation}
+p_{\theta}(f_1^J|e_1^I) = \sum_{a_1^J} p_{\theta}(f_1^J, a_1^J|e_1^I)
+\label{Overview about Statistical Alignment p(f,e)}
+\end{equation}
+
 
 \subsection{Hidden Markov Alignment Model \cite{Och2003Systematic}}
 The alignment model is re-structured:
@@ -575,21 +580,32 @@ where $p_{0}$ is the probability of a transition to the empty word.
 \end{itemize}
 
 \section{Word alignment model in Neural Network}
-We start from this formula \eqref{Och2003Systematic Alignment Model Equation}:
+We start from this formula \eqref{Overview about Statistical Alignment p(f,e)}:
 
 \begin{equation}
-p(f_1^J, a_1^J|e_1^I) = p(J|I) \prod_{j=1}^J p(f_j | e_{a_j}) * p(a_j | a_{j-1}, I)
-\label{Word Alignment Model Neural Network HMM Equation}
+p_{\theta}(f_1^J|e_1^I) = \sum_{a_1^J} p_{\theta}(f_1^J, a_1^J|e_1^I)
+\label{Word Alignment Model Neural Network p(f,e)}
 \end{equation}
-
-In general, we try to calculate these probability by using two different neural networks.
-The significant point of NN is embedding context.
 
 \subsection{Probability approach}
-Unsupervised neural HMM of \cite{Tran16unsupervised} shows how to apply NN in HMM. \eqref{Word Alignment Model Neural Network HMM Equation} becomes:
-\begin{equation}
-p(f_1^J, a_1^J|e_1^I) = \prod_{j=1}^J p(f_j | e_{a_j}) * p(a_j | a_{j-1}, I)
-\end{equation}
+Unsupervised neural HMM of \cite{Tran16unsupervised} shows how to apply NN in HMM. In general, we try to calculate the probability by using two different neural networks.The significant point of NN is embedding context.
+
+They use Generalized EM to estimate $\theta$, \eqref{Word Alignment Model Neural Network p(f,e)} becomes:
+
+$p_{\theta}(f_1^J|e_1^I) = \sum_{a_1^J} p_{\theta}(f_1^J, a_1^J|e_1^I)$ \\
+
+$ = E_{q(a_1^J)} [ln p_{\theta}(f_1^J, a_1^J|e_1^I) ] + H[q(a_1^J)] + KL(q(a_1^J) \| p_{\theta}(a_1^J|f_1^J,e_1^I) ) $ \\
+
+Updating $\theta$ requires only maximizing $E_{q(a_1^J)} [ln p_{\theta}(f_1^J, a_1^J|e_1^I) ]$. The gradient is: \\
+\marginpar{Why?: See \citep{Tran16unsupervised}}
+
+$ J(\theta) = \sum_{a_1^J} \quad q(a_1^J)\quad ln \, p_{\theta}(f_1^J, a_1^J|e_1^I)  $
+
+
+
+
+
+
 
 
 
