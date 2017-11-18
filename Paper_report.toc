@@ -43,7 +43,9 @@
 \contentsline {subsubsection}{\numberline {8.2.3}Extension: Refinement of alignment}{16}
 \contentsline {section}{\numberline {9}Word alignment model in Neural Network}{16}
 \contentsline {subsection}{\numberline {9.1}Probability approach}{16}
-\contentsline {subsection}{\numberline {9.2}Non-probability - Score approach}{16}
+\contentsline {subsubsection}{\numberline {9.1.1}\cite {Tran16unsupervised}}{16}
+\contentsline {paragraph}{How to apply NN ?}{17}
+\contentsline {subsection}{\numberline {9.2}Non-probability - Score approach}{17}
 \contentsline {section}{\numberline {10}Techniques in Alignment}{17}
 \contentsline {subsection}{\numberline {10.1}Agreement between models}{17}
 \contentsline {section}{\numberline {11}Evaluation of a translation/alignment}{17}

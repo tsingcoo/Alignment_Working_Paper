@@ -588,21 +588,58 @@ p_{\theta}(f_1^J|e_1^I) = \sum_{a_1^J} p_{\theta}(f_1^J, a_1^J|e_1^I)
 \end{equation}
 
 \subsection{Probability approach}
+\subsubsection{\cite{Tran16unsupervised}}
 Unsupervised neural HMM of \cite{Tran16unsupervised} shows how to apply NN in HMM. In general, we try to calculate the probability by using two different neural networks.The significant point of NN is embedding context.
 
-They use Generalized EM to estimate $\theta$, \eqref{Word Alignment Model Neural Network p(f,e)} becomes:
+\begin{enumerate}
+\item They use Generalized EM to estimate $\theta$, \eqref{Word Alignment Model Neural Network p(f,e)} becomes:\\
 
-$p_{\theta}(f_1^J|e_1^I) = \sum_{a_1^J} p_{\theta}(f_1^J, a_1^J|e_1^I)$ \\
+$p_{\theta}(f_1^J|e_1^I) = \sum_{a_1^J} p_{\theta}(f_1^J, a_1^J|e_1^I)$
 
-$ = E_{q(a_1^J)} [ln p_{\theta}(f_1^J, a_1^J|e_1^I) ] + H[q(a_1^J)] + KL(q(a_1^J) \| p_{\theta}(a_1^J|f_1^J,e_1^I) ) $ \\
+$ = E_{q(a_1^J)} [ln p_{\theta}(f_1^J, a_1^J|e_1^I) ] + H[q(a_1^J)] + KL(q(a_1^J) \| p_{\theta}(a_1^J|f_1^J,e_1^I) ) $
 
-Updating $\theta$ requires only maximizing $E_{q(a_1^J)} [ln p_{\theta}(f_1^J, a_1^J|e_1^I) ]$. The gradient is: \\
+\item Updating $\theta$ requires only maximizing $E_{q(a_1^J)} [ln p_{\theta}(f_1^J, a_1^J|e_1^I) ]$. \\ The gradient is: \\
 \marginpar{Why?: See \citep{Tran16unsupervised}}
 
-$ J(\theta) = \sum_{a_1^J} \quad q(a_1^J)\quad ln \, p_{\theta}(f_1^J, a_1^J|e_1^I)  $
+$ J(\theta) = \sum_{a_1^J} \quad q(a_1^J)\quad \bigtriangledown log \, p_{\theta}(f_1^J, a_1^J|e_1^I)  $
+
+\item In the step E, we model $q(a_1^J) = p_{\theta'}(a_1^J|f_1^J,e_1^I)$.
+Therefore,\\
+
+$ J(\theta) = \sum_{a_1^J} \quad p_{\theta'}(a_1^J|f_1^J,e_1^I) \quad \bigtriangledown log \, p_{\theta}(f_1^J, a_1^J|e_1^I)  $
+
+\item From \eqref{Och2003Systematic Alignment Model Equation}, we have \\
+$p(f_1^J, a_1^J|e_1^I) = \prod_{j=1}^J p(f_j | e_{a_j}) * p(a_j | a_{j-1})$  with the assumptions about I, J.
+Therefore, \\
+
+$ J(\theta) = \sum_{a_1^J} \quad p_{\theta'}(a_1^J|f_1^J,e_1^I) \quad \bigtriangledown log \, p_{\theta}(f_1^J, a_1^J|e_1^I)  $
+
+$ = \sum_{a_1^J} \quad p_{\theta'}(a_1^J|f_1^J,e_1^I) \quad \bigtriangledown log \, [\prod_{j=1}^J p_{\theta}(f_j | e_{a_j}) * p_{\theta}(a_j | a_{j-1})  ] $
+
+$ = \sum_{a_1^J} \quad p_{\theta'}(a_1^J|f_1^J,e_1^I) \quad \bigtriangledown [\sum_{j=1}^J log \, p_{\theta}(f_j | e_{a_j}) + log \, p_{\theta}(a_j | a_{j-1})  ] $
+
+$ = \sum_{j=1}^J \sum_{a_j} p_{\theta'}(a_j|f_j,e_{a_j}) \, \bigtriangledown log \, p_{\theta}(f_j | e_{a_j}) \quad + p_{\theta'}(a_j, a_{j-1}|f_j,e_{a_j}) \, \bigtriangledown log \, p_{\theta}(a_j | a_{j-1})  ] $
+
+\item We choose $a$ is state, $f$ is observation. We remove $e$.
+Therefore, \\
+
+$ J(\theta) = \sum_{j=1}^J \sum_{a_j} p_{\theta'}(a_j|f_j) \, \bigtriangledown log \, p_{\theta}(f_j | e_{a_j}) \quad + p_{\theta'}(a_j, a_{j-1}|f_j) \, \bigtriangledown log \, p_{\theta}(a_j | a_{j-1})  ] $
+
+\end{enumerate}
+
+\paragraph{How to apply NN ?}
+\begin{itemize}
+\item Emission matrix $p_{\theta}(f_j | e_{a_j})$: It is not the normal way of translation. We receive the target-language sentence and return the probabilities of all source-language vocabulary.
+\item Transition matrix $p_{\theta}(a_j | a_{j-1})$: We receive the target-language sentence and return this matrix.
+\item The posteriors $p_{\theta'}(a_j|f_j)$ and $p_{\theta'}(a_j, a_{j-1}|f_j)$ : We set source-language sentence as a set of observation, Baum-Welch algorithm returns forward and backward messages (How is the size of these messages)
+\end{itemize}
 
 
 
+
+
+
+ 
 
 
 

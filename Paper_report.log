@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.4.15)  16 NOV 2017 12:49
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.4.15)  17 NOV 2017 14:01
 entering extended mode
  %&-line parsing enabled.
 **Paper_report.tex
@@ -276,11 +276,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 595--596
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 597--598
+Underfull \hbox (badness 10000) in paragraph at lines 606--608
 
  []
 
-[16] [17] (./Paper_report.bbl) [18] (./Paper_report.aux) ) 
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 611--614
+
+ []
+
+
+Overfull \hbox (43.39908pt too wide) in paragraph at lines 621--622
+[]$\OT1/cmr/m/n/10 = [][] [][] \OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (\OML/cmm/m/
+it/10 a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 f[]; e[]\OT1/cmr/m/n/10 )  \OMS/cms
+y/m/n/10 5 \OML/cmm/m/it/10 log p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f[]\OMS/cm
+sy/m/n/10 j\OML/cmm/m/it/10 e[]\OT1/cmr/m/n/10 )  + \OML/cmm/m/it/10 p[]\OT1/cm
+r/m/n/10 (\OML/cmm/m/it/10 a[]; a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 f[]; e[]\
+OT1/cmr/m/n/10 )  \OMS/cmsy/m/n/10 5 \OML/cmm/m/it/10 log p[]\OT1/cmr/m/n/10 (\
+OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 )]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 623--625
+
+ []
+
+
+Overfull \hbox (30.0854pt too wide) in paragraph at lines 626--627
+[]$\OML/cmm/m/it/10 J\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 ) = [
+][] [][] \OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n
+/10 j\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 )  \OMS/cmsy/m/n/10 5 \OML/cmm/m/it/10
+ log p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10
+ e[]\OT1/cmr/m/n/10 )  + \OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 
+a[]; a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 )  \OMS/cmsy/m/n/
+10 5 \OML/cmm/m/it/10 log p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n
+/10 j\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 )]$ 
+ []
+
+[17] [18] (./Paper_report.bbl) [19] (./Paper_report.aux) ) 
 Here is how much of TeX's memory you used:
  1907 strings out of 493848
  23360 string characters out of 1152823
@@ -304,9 +337,9 @@ mr5.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr
 f-texlive/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-texlive/fo
 nts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/pu
 blic/amsfonts/cm/cmti10.pfb>
-Output written on Paper_report.pdf (18 pages, 252896 bytes).
+Output written on Paper_report.pdf (19 pages, 255481 bytes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
+ 128 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
