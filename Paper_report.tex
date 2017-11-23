@@ -286,7 +286,14 @@ Two steps of training:
 %	Alignment by agreement
 %----------------------------------------------------------------------------------------
 \section{Alignment by Agreement \citep{Liang2006Alignment}}
+\subsection{Main idea}
+This approach is similar to ensemble method. In this unsupervised approach, the two simple asymmetric models are trained jointly to maximize a combination of data likelihood and agreement between the models. The new point is encouraging the agreement between these models during training.
 
+In fact, intersecting the alignment prediction of two asymmetric models reduces AER. An assumption is that this intersection (Agreement) could reduce the loss of each asymmetric model.
+
+Moreover, we could see the transformation from asymmetric models to symmetric model.
+
+\subsection{}
 
 
 
@@ -629,28 +636,25 @@ $ J(\theta) = \sum_{j=1}^J \sum_{a_j} p_{\theta'}(a_j|f_j) \, \bigtriangledown l
 
 \paragraph{How to apply NN ?}
 \begin{itemize}
-\item Emission matrix $p_{\theta}(f_j | e_{a_j})$: It is not the normal way of translation. We receive the target-language sentence and return the probabilities of all source-language vocabulary.
+\item Emission matrix $p_{\theta}(f_j | e_{a_j})$: It is not the normal way of translation. We receive the target-language sentence and return the probabilities for all source-language vocabulary.
 \item Transition matrix $p_{\theta}(a_j | a_{j-1})$: We receive the target-language sentence and return this matrix.
 \item The posteriors $p_{\theta'}(a_j|f_j)$ and $p_{\theta'}(a_j, a_{j-1}|f_j)$ : We set source-language sentence as a set of observation, Baum-Welch algorithm returns forward and backward messages (How is the size of these messages)
 \end{itemize}
 
+\paragraph{What is the problem of transition matrix in programming ?}
+The input of transition model is target sentence. The model returns the matrix with its size being ($I * I$). 
 
+However, this matrix is hard to return. This is why I return matrix ($I * V_e$) with $V_e$ is the size of target language vocabulary. From this matrix, I could select the probabilities of the words existed in target sentence. The final result is a matrix with its size being ($I * I$).
 
-
-
-
- 
-
-
-
-
-
-
-
-
+This method breaks the structure of the tensor tree. The cost calculated can not be back-propagated because there is no relationship between this cost and this matrix ($I * V_e$).
 
 \subsection{Non-probability - Score approach}
-The papers are \cite{Yang13word}, \cite{Tamura14recurrent}.
+\subsubsection{\cite{Yang13word}, \cite{Tamura14recurrent}}
+
+
+
+\section{Symmetrical alignment}
+
 
 \section{Techniques in Alignment}
 
