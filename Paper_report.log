@@ -1,0 +1,410 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.17)  27 NOV 2017 18:31
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Paper_report.tex
+(./Paper_report.tex
+LaTeX2e <2017-04-15>
+Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count88
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/11/05 v2.16a AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks15
+\ex@=\dimen105
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen106
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count89
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count90
+\leftroot@=\count91
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count92
+\DOTSCASE@=\count93
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen107
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count94
+\c@MaxMatrixCols=\count95
+\dotsspace@=\muskip10
+\c@parentequation=\count96
+\dspbrk@lvl=\count97
+\tag@help=\toks16
+\row@=\count98
+\column@=\count99
+\maxfields@=\count100
+\andhelp@=\toks17
+\eqnshift@=\dimen108
+\alignsep@=\dimen109
+\tagshift@=\dimen110
+\tagwidth@=\dimen111
+\totwidth@=\dimen112
+\lineht@=\dimen113
+\@envbody=\toks18
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(./Paper_report.aux)
+\openout1 = `Paper_report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+
+(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count101
+\scratchdimen=\dimen114
+\scratchbox=\box28
+\nofMPsegments=\count102
+\nofMParguments=\count103
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count104
+\MPscratchDim=\dimen115
+\MPnumerator=\count105
+\makeMPintoPDFobject=\count106
+\everyMPtoPDFconversion=\toks21
+) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+(./Paper_report.toc [1
+
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (10.08525pt too wide) in paragraph at lines 47--47
+ [][] []\OT1/cmr/m/n/10 Assumption about HMM align-ment prob-a-bil-ity $\OML/cm
+m/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it
+/10 a[]; I\OT1/cmr/m/n/10 )$ 
+ []
+
+)
+\tf@toc=\write3
+\openout3 = `Paper_report.toc'.
+
+ [2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 43.
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 43.
+
+Overfull \hbox (18.13988pt too wide) detected at line 56
+\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = [] \OM
+L/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X; Z\OT1/cmr/m/n/10 ) = \OML/c
+mm/m/it/10 E[]\OT1/cmr/m/n/10 [[] \OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m
+/it/10 X; Z\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 )] + \OML/cmm/
+m/it/10 H\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 q\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Z
+\OT1/cmr/m/n/10 )] + \OML/cmm/m/it/10 KL\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 q\OT1
+/cmr/m/n/10 (\OML/cmm/m/it/10 Z\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 jj\OML/cmm/m/i
+t/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Z\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 X; 
+^^R\OT1/cmr/m/n/10 ))
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+
+ []
+
+
+Overfull \hbox (31.6809pt too wide) in paragraph at lines 108--109
+[]\OT1/cmr/m/n/10 Input: A sen-tence $\OML/cmm/m/it/10 X \OT1/cmr/m/n/10 = \OML
+/cmm/m/it/10 x[]; :::; x[]; :::x[]$\OT1/cmr/m/n/10 , a set of vo-cab-u-lary $\O
+ML/cmm/m/it/10 W \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 w[]; :::; w[]; :::w[]$
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 119--122
+
+ []
+
+[5] [6] [7]
+Overfull \hbox (87.23282pt too wide) detected at line 248
+\OML/cmm/m/it/10 Loss[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^R[]\OMS/cmsy/m/n/10 
+j\OML/cmm/m/it/10 W\OT1/cmr/m/n/10 ) = \OMS/cmsy/m/n/10 ^^@[] [] [] \OML/cmm/m/
+it/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 source \OT1/cmr/m/n/10 = \OML/cmm/m/
+it/10 true\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 Wx[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/
+n/10 ^^@ [] [] [] \OML/cmm/m/it/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 source 
+\OT1/cmr/m/n/10 = \OML/cmm/m/it/10 false\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 y[]\
+OT1/cmr/m/n/10 )
+ []
+
+
+Overfull \hbox (89.0763pt too wide) detected at line 254
+\OML/cmm/m/it/10 Loss[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 W\OMS/cmsy/m/n/10 j\OM
+L/cmm/m/it/10 ^^R[]\OT1/cmr/m/n/10 ) = \OMS/cmsy/m/n/10 ^^@[] [] [] \OML/cmm/m/
+it/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 source \OT1/cmr/m/n/10 = \OML/cmm/m/
+it/10 false\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 Wx[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m
+/n/10 ^^@ [] [] [] \OML/cmm/m/it/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 source
+ \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 true\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 y[]\
+OT1/cmr/m/n/10 )
+ []
+
+[8]
+Overfull \hbox (3.77843pt too wide) in paragraph at lines 269--272
+[]\OT1/cmr/m/n/10 Stopping con-di-tion/Best hyper-parameters se-lec-tion - Val-
+i-da-tion step: Sim-
+ []
+
+[9]
+Overfull \hbox (21.33069pt too wide) detected at line 342
+\OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]; a[]\OMS/cmsy/m/n/10 
+j\OML/cmm/m/it/10 e; f\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 (
+\OML/cmm/m/it/10 a[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 
+j\OML/cmm/m/it/10 window\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 ))
+ = \OML/cmm/m/it/10 functions[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 window\OT1/cmr
+/m/n/10 (\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 ))
+ []
+
+[10] [11]
+Overfull \hbox (34.9597pt too wide) detected at line 398
+\OML/cmm/m/it/10 s[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\OML
+/cmm/m/it/10 e[]; f[]\OT1/cmr/m/n/10 ) = [] \OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 a[]; a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 window\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 e[]\OT1/cmr/m/n/10 )) \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it
+/10 t[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f[]; e[]\OMS/cmsy/m/n/10 j\OML/cmm/m/i
+t/10 window\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 e[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/
+10 ; window\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 ))
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 461--462
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--464
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--466
+
+ []
+
+
+Overfull \hbox (3.17303pt too wide) in paragraph at lines 473--473
+[]\OT1/cmr/bx/n/14.4 Hierarchical Mul-ti-scale Re-cur-rent Neu-ral Net-
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 480--481
+
+ []
+
+[14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 575--576
+
+ []
+
+[16] [17]
+Underfull \hbox (badness 10000) in paragraph at lines 671--672
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 682--684
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 687--690
+
+ []
+
+
+Overfull \hbox (43.39908pt too wide) in paragraph at lines 697--698
+[]$\OT1/cmr/m/n/10 = [][] [][] \OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (\OML/cmm/m/
+it/10 a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 f[]; e[]\OT1/cmr/m/n/10 )  \OMS/cms
+y/m/n/10 5 \OML/cmm/m/it/10 log p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f[]\OMS/cm
+sy/m/n/10 j\OML/cmm/m/it/10 e[]\OT1/cmr/m/n/10 )  + \OML/cmm/m/it/10 p[]\OT1/cm
+r/m/n/10 (\OML/cmm/m/it/10 a[]; a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 f[]; e[]\
+OT1/cmr/m/n/10 )  \OMS/cmsy/m/n/10 5 \OML/cmm/m/it/10 log p[]\OT1/cmr/m/n/10 (\
+OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 )]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--701
+
+ []
+
+
+Overfull \hbox (30.0854pt too wide) in paragraph at lines 702--703
+[]$\OML/cmm/m/it/10 J\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 ) = [
+][] [][] \OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n
+/10 j\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 )  \OMS/cmsy/m/n/10 5 \OML/cmm/m/it/10
+ log p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10
+ e[]\OT1/cmr/m/n/10 )  + \OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 
+a[]; a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 )  \OMS/cmsy/m/n/
+10 5 \OML/cmm/m/it/10 log p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n
+/10 j\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 )]$ 
+ []
+
+[19] [20] (./Paper_report.bbl) [21] (./Paper_report.aux) ) 
+Here is how much of TeX's memory you used:
+ 2501 strings out of 492995
+ 33987 string characters out of 6132703
+ 102620 words of memory out of 5000000
+ 6030 multiletter control sequences out of 15000+600000
+ 10295 words of font info for 37 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 39i,6n,28p,368b,259s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2
+017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/20
+17/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/201
+7/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/2017/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2017/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2017/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2017/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2017/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2017/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmti10.pfb>
+Output written on Paper_report.pdf (21 pages, 244477 bytes).
+PDF statistics:
+ 136 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
