@@ -466,9 +466,78 @@ They highlight the role of agreement constraints in alignment performance improv
 
 
 
+%----------------------------------------------------------------------------------------
+%	Hierarchical Multiscale Recurrent Neural Networks
+%----------------------------------------------------------------------------------------
 
+\section{Hierarchical Multiscale Recurrent Neural Networks}
 
+\subsection{Main idea}
+Hierarchical Multiscale RNNs learns the latent hierarchical structure of a sequence and its temporal representation with non-fixed timescales (Without explicit boundary information).
 
+For example, this model consider a sentence as a list of characters, not only words. It is trained to know autonomously the beginning and the end of a word. For each layer, it could group the units.
+
+The key idea is an update mechanism with a binary boundary detector (Gate determining the boundary of an object).\\
+
+The advantages of "Multiscale" over standard RNNs:
+\begin{itemize}
+\item Updating the high-level layers is less frequently $\rightarrow$ Computational efficiency and Vanishing gradient problem. Solving vanishing gradient problem means that this model could delivering efficiently long-term dependencies.
+\item Flexible resource allocation. The model could modify the number of hidden units for an information. For example, the model could use more units to the higher layers (Long-term dependency) and less units to the lower layers (Short-term dependency). This means that it could decide to keep the long-term or short-term information.
+
+\item A good generalization performance (Dropout approach)
+\item The internal process of RNN becomes more interpretable. We could count the number of operation execution time ( Update, Flush and Copy operation)
+\end{itemize}
+
+The problem of the previous kind of RNNs:
+\begin{itemize}
+\item LSTMs: LSTMs has also an update mechanism with forget and update gates, which means that it could operate with different timescales. However, these timescales are not organized hierarchically. \\
+Problem:
+	\begin{itemize}
+	 \item In practice, after a few hundred time steps, long-term information is gradually diluted at every time step.
+	 \item LSTMs is computationally expensive (Update at every time step for each unit)
+ 	\end{itemize} 
+ 	
+\item Clockwork RNNs and its soft timescale approach: The hidden units are grouped into several modules. Different timescales are assigned to these modules (i.e: A module $i$ is updated at every $2^{i - 1}$ -th time step).\\
+Problem:
+	\begin{itemize}
+	\item It is not easy to find a good timescales because timescale depends on data.
+	\item It is unclear how to deploy more layers than the number of boundary levels that is explicitly observed in the data.
+	\end{itemize}
+	
+\item Hierarchical RNNs with Known explicit hierarchical boundary structure (Not multiscale).\\ Problem: It is the same with Clockwork RNNs that boundary information is not explicit and expensive to be discovered.
+
+\item CNNs with 1-D kernels: It could provide also high-level representation of sequence.\\
+Problem: We need to observe a full sequence with a reduced length.
+
+\item Zoneout, a regularization technique similar to dropout.\\
+Problem: Its strength is still an hyper-parameter.
+
+\end{itemize}
+
+\subsection{Update mechanism}
+They describe Hierarchical Multiscale RNN (HM-RNN) based on LSTM update rule. It is better to see the graph in paper.\\
+\marginpar{Why it is not based on RNN ?}
+
+At each time step $t$, for each layer $l$, there are:
+\begin{equation}
+h_t^l,\, c_t^l,\, z_t^l = f^l (c_{t-1}^l, h_{t-1}^l, h_t^{l-1}, h_{t-1}^{l+1}, z_{t-1}^l, z_t^{l-1})
+\end{equation}
+
+The function includes Update, Copy and Flush operation depending on binary detector - boundary states $z_{t-1}^l$ (Previous time step) and $z_t^{l-1}$ (Below layer).
+The difference between three operations are the use of context $c$ which keeps the summary information of the previous units.
+\begin{itemize}
+\item \textbf{Flush}: It shows the beginning of a segment or "word", the boundary is found previously.
+\\ The unit $h_t^l$ does not get information from same-level context $c_{t-1}^l$ (Eject) but higher-level unit $h_{t-1}^{l+1}$ (This is the connection between two words, it is re-installed with more long-term information from previous words). 
+
+\item  \textbf{Copy}: It shows not-end state of a "word", none of boundary is found.
+\\ the unit  $h_t^l$ only copies from previous unit $h_{t-1}^l$, its context copies from $c_{t-1}^l$ (It reduces the number of operation execution, leading to computational efficiency).
+
+\item \textbf{Update}: It is similar to update operation of LSTM (Forget, input and output gate) but it is executed sparsely. It is the end of a "word", the boundary is found in the unit below.
+\\ The unit $h_t^l$ gets also information from the same-level context $c_{t-1}^l$ and information from the lower-level unit $h_t^{l-1}$, but not from the higher-level unit $h_{t-1}^{l+1}$ (It does not need information from previous words).
+\end{itemize}
+
+\subsection{Analysis}
+The result for character-level language model does not show clearly a good performance.
 
 
 

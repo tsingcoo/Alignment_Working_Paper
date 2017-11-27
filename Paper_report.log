@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.17)  23 NOV 2017 14:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.17)  27 NOV 2017 18:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -201,7 +201,7 @@ e
 (./Paper_report.toc [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (10.08525pt too wide) in paragraph at lines 43--43
+Overfull \hbox (10.08525pt too wide) in paragraph at lines 47--47
  [][] []\OT1/cmr/m/n/10 Assumption about HMM align-ment prob-a-bil-ity $\OML/cm
 m/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it
 /10 a[]; I\OT1/cmr/m/n/10 )$ 
@@ -317,28 +317,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 465--466
 
  []
 
+
+Overfull \hbox (3.17303pt too wide) in paragraph at lines 473--473
+[]\OT1/cmr/bx/n/14.4 Hierarchical Mul-ti-scale Re-cur-rent Neu-ral Net-
+ []
+
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 506--507
+Underfull \hbox (badness 10000) in paragraph at lines 480--481
 
  []
 
 [14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 602--603
+Underfull \hbox (badness 10000) in paragraph at lines 575--576
+
+ []
+
+[16] [17]
+Underfull \hbox (badness 10000) in paragraph at lines 671--672
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 613--615
+Underfull \hbox (badness 10000) in paragraph at lines 682--684
 
  []
 
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 618--621
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 687--690
 
  []
 
 
-Overfull \hbox (43.39908pt too wide) in paragraph at lines 628--629
+Overfull \hbox (43.39908pt too wide) in paragraph at lines 697--698
 []$\OT1/cmr/m/n/10 = [][] [][] \OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (\OML/cmm/m/
 it/10 a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 f[]; e[]\OT1/cmr/m/n/10 )  \OMS/cms
 y/m/n/10 5 \OML/cmm/m/it/10 log p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f[]\OMS/cm
@@ -349,12 +359,12 @@ OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 )]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 630--632
+Underfull \hbox (badness 10000) in paragraph at lines 699--701
 
  []
 
 
-Overfull \hbox (30.0854pt too wide) in paragraph at lines 633--634
+Overfull \hbox (30.0854pt too wide) in paragraph at lines 702--703
 []$\OML/cmm/m/it/10 J\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 ) = [
 ][] [][] \OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n
 /10 j\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 )  \OMS/cmsy/m/n/10 5 \OML/cmm/m/it/10
@@ -365,15 +375,15 @@ a[]; a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 )  \OMS/cmsy/m/n/
 /10 j\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 )]$ 
  []
 
-[17] [18] (./Paper_report.bbl) [19] (./Paper_report.aux) ) 
+[19] [20] (./Paper_report.bbl) [21] (./Paper_report.aux) ) 
 Here is how much of TeX's memory you used:
  2501 strings out of 492995
  33987 string characters out of 6132703
- 101620 words of memory out of 5000000
+ 102620 words of memory out of 5000000
  6030 multiletter control sequences out of 15000+600000
  10295 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,6n,28p,366b,259s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,6n,28p,368b,259s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2
 017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/20
 17/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/201
@@ -391,10 +401,10 @@ ype1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmti10.pfb>
-Output written on Paper_report.pdf (19 pages, 239421 bytes).
+Output written on Paper_report.pdf (21 pages, 244477 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
+ 136 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
