@@ -347,21 +347,12 @@ becomes
 \end{split}
 \end{equation}
 
-where $Z_x$ is a normalization constant. It is sum of the product of two model posteriors over the set of possible $z$ with nonzero probability under both models.\\
-
-In E-step,
-\begin{equation}
- E: q(z;x) := \frac{1}{Z_x} p_1(z|x ;\theta_1) p_2(z|x ;\theta_2)
-\end{equation}
-
-becomes
+Where $Z_x$ is a normalization constant. It is sum of the product of two model posteriors over the set of possible $z$ with nonzero probability under both models.
 
 \begin{equation}
 q(z;x) := \prod_{i,j} p_1(z_{ij} | x; \theta_1) \, p_2(z_{ij} | x; \theta_2)
 \end{equation}
-where each $p_k(z_{i,j}|x; \theta_k)$ is the posterior marginal probability of the (i,j) edge.\\
-
-This posterior $q(z;x)$ could show the disagreement because this product $p_1(z|x ;\theta_1) p_2(z|x ;\theta_2)$ is small.
+Where each $p_k(z_{i,j}|x; \theta_k)$ is the posterior marginal probability of the (i,j) edge.
 
 
 %----------------------------------------------------------------------------------------
