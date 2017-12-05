@@ -1,61 +1,63 @@
-\contentsline {part}{I\hspace {1em}Paper report}{3}
-\contentsline {section}{\numberline {1}Unsupervised Neural HMMs \citep {Tran16unsupervised}}{3}
-\contentsline {subsection}{\numberline {1.1}Main idea}{3}
-\contentsline {subsection}{\numberline {1.2}What is their concentration ?}{3}
-\contentsline {subsection}{\numberline {1.3}What is the role of HMM ?}{4}
-\contentsline {subsection}{\numberline {1.4}Where is neural network ?}{4}
-\contentsline {section}{\numberline {2}What does Attention in NMT pay Attention to ? \citep {Ghader2017what} }{5}
-\contentsline {subsection}{\numberline {2.1}Main idea}{5}
-\contentsline {subsection}{\numberline {2.2}How to compare ?}{5}
-\contentsline {subsection}{\numberline {2.3}Analysis}{6}
-\contentsline {section}{\numberline {3}Confidence through Attention \citep {Rikters2017confidence}}{6}
-\contentsline {subsection}{\numberline {3.1}Main idea}{6}
-\contentsline {subsection}{\numberline {3.2}How to calculate Confidence metric ?}{7}
-\contentsline {subsection}{\numberline {3.3}Analysis}{7}
-\contentsline {subsubsection}{\numberline {3.3.1}Comparison with human evaluation}{7}
-\contentsline {subsubsection}{\numberline {3.3.2}Exp: Filtering Back-translated Data}{7}
-\contentsline {subsubsection}{\numberline {3.3.3}Exp: Hybrid Decisions}{8}
-\contentsline {section}{\numberline {4}Word Translation without Parallel data \citep {Conneau2017Word}}{8}
-\contentsline {subsection}{\numberline {4.1}Main idea}{8}
-\contentsline {subsection}{\numberline {4.2}How does it works ?}{8}
-\contentsline {section}{\numberline {5}Alignment by Agreement \citep {Liang2006Alignment}}{9}
-\contentsline {subsection}{\numberline {5.1}Main idea}{9}
-\contentsline {subsection}{\numberline {5.2}How to train these two model ?}{9}
-\contentsline {subsubsection}{\numberline {5.2.1}Optimization via EM}{10}
-\contentsline {section}{\numberline {6}Word Alignment Modeling with Context Dependent Deep Neural Network \citep {Yang13word}}{11}
-\contentsline {subsection}{\numberline {6.1}Main idea}{11}
-\contentsline {subsection}{\numberline {6.2}How does DNN work in word alignment ?}{11}
-\contentsline {subsection}{\numberline {6.3}Loss in supervised learning}{12}
-\contentsline {subsection}{\numberline {6.4}Analysis}{12}
-\contentsline {subsubsection}{\numberline {6.4.1}Two loss functions during training}{12}
-\contentsline {subsubsection}{\numberline {6.4.2}Result}{12}
-\contentsline {subsubsection}{\numberline {6.4.3}Notes}{12}
-\contentsline {section}{\numberline {7}Recurrent Neural Networks for Word Alignment Model \citep {Tamura14recurrent}}{13}
-\contentsline {subsection}{\numberline {7.1}Main idea}{13}
-\contentsline {subsection}{\numberline {7.2}How does RNNs work in calculating alignment score ?}{13}
-\contentsline {subsection}{\numberline {7.3}Loss in unsupervised learning}{13}
-\contentsline {subsection}{\numberline {7.4}Agreement constraints}{14}
-\contentsline {subsection}{\numberline {7.5}Analysis}{14}
-\contentsline {subsubsection}{\numberline {7.5.1}Result}{14}
-\contentsline {section}{\numberline {8}Hierarchical Multiscale Recurrent Neural Networks}{15}
-\contentsline {subsection}{\numberline {8.1}Main idea}{15}
-\contentsline {subsection}{\numberline {8.2}Update mechanism}{16}
-\contentsline {subsection}{\numberline {8.3}Analysis}{17}
-\contentsline {part}{II\hspace {1em}Report}{18}
-\contentsline {section}{\numberline {9}Overview about statistical alignment }{18}
-\contentsline {subsection}{\numberline {9.1}Word-based alignment ? \cite {Och2003Systematic}}{18}
-\contentsline {subsection}{\numberline {9.2}Hidden Markov Alignment Model \cite {Och2003Systematic}}{18}
-\contentsline {subsubsection}{\numberline {9.2.1}Assumption about HMM alignment probability $p(a_j | a_{j-1}, I)$ or $p(i | i', I)$}{19}
-\contentsline {subsubsection}{\numberline {9.2.2}Extension: Empty word in target sentence}{20}
-\contentsline {subsubsection}{\numberline {9.2.3}Extension: Refinement of alignment}{20}
-\contentsline {section}{\numberline {10}Word alignment model in Neural Network}{20}
-\contentsline {subsection}{\numberline {10.1}Probability approach}{20}
-\contentsline {subsubsection}{\numberline {10.1.1}\cite {Tran16unsupervised}}{20}
-\contentsline {paragraph}{How to apply NN ?}{21}
-\contentsline {paragraph}{What is the problem of transition matrix in programming ?}{21}
-\contentsline {subsection}{\numberline {10.2}Non-probability - Score approach}{22}
-\contentsline {subsubsection}{\numberline {10.2.1}\cite {Yang13word}, \cite {Tamura14recurrent}}{22}
-\contentsline {section}{\numberline {11}Symmetrical alignment}{22}
-\contentsline {section}{\numberline {12}Techniques in Alignment}{22}
-\contentsline {subsection}{\numberline {12.1}Agreement between models}{22}
-\contentsline {section}{\numberline {13}Evaluation of a translation/alignment}{22}
+\contentsline {part}{I\hspace {1em}Paper report}{4}
+\contentsline {section}{\numberline {1}Unsupervised Neural HMMs \citep {Tran16unsupervised}}{4}
+\contentsline {subsection}{\numberline {1.1}Main idea}{4}
+\contentsline {subsection}{\numberline {1.2}What is their concentration ?}{4}
+\contentsline {subsection}{\numberline {1.3}What is the role of HMM ?}{5}
+\contentsline {subsection}{\numberline {1.4}Where is neural network ?}{5}
+\contentsline {section}{\numberline {2}What does Attention in NMT pay Attention to ? \citep {Ghader2017what} }{6}
+\contentsline {subsection}{\numberline {2.1}Main idea}{6}
+\contentsline {subsection}{\numberline {2.2}How to compare ?}{6}
+\contentsline {subsection}{\numberline {2.3}Analysis}{7}
+\contentsline {section}{\numberline {3}Confidence through Attention \citep {Rikters2017confidence}}{7}
+\contentsline {subsection}{\numberline {3.1}Main idea}{7}
+\contentsline {subsection}{\numberline {3.2}How to calculate Confidence metric ?}{8}
+\contentsline {subsection}{\numberline {3.3}Analysis}{8}
+\contentsline {subsubsection}{\numberline {3.3.1}Comparison with human evaluation}{8}
+\contentsline {subsubsection}{\numberline {3.3.2}Exp: Filtering Back-translated Data}{8}
+\contentsline {subsubsection}{\numberline {3.3.3}Exp: Hybrid Decisions}{9}
+\contentsline {section}{\numberline {4}Word Translation without Parallel data \citep {Conneau2017Word}}{9}
+\contentsline {subsection}{\numberline {4.1}Main idea}{9}
+\contentsline {subsection}{\numberline {4.2}How does it works ?}{9}
+\contentsline {section}{\numberline {5}Alignment by Agreement \citep {Liang2006Alignment}}{10}
+\contentsline {subsection}{\numberline {5.1}Main idea}{10}
+\contentsline {subsection}{\numberline {5.2}How to train these two model ?}{10}
+\contentsline {subsubsection}{\numberline {5.2.1}Optimization via EM}{11}
+\contentsline {subsection}{\numberline {5.3}Analysis}{12}
+\contentsline {section}{\numberline {6}Word Alignment Modeling with Context Dependent Deep Neural Network \citep {Yang13word}}{12}
+\contentsline {subsection}{\numberline {6.1}Main idea}{12}
+\contentsline {subsection}{\numberline {6.2}How does DNN work in word alignment ?}{12}
+\contentsline {subsection}{\numberline {6.3}Loss in supervised learning}{13}
+\contentsline {subsection}{\numberline {6.4}Analysis}{13}
+\contentsline {subsubsection}{\numberline {6.4.1}Two loss functions during training}{13}
+\contentsline {subsubsection}{\numberline {6.4.2}Result}{14}
+\contentsline {subsubsection}{\numberline {6.4.3}Notes}{14}
+\contentsline {section}{\numberline {7}Recurrent Neural Networks for Word Alignment Model \citep {Tamura14recurrent}}{14}
+\contentsline {subsection}{\numberline {7.1}Main idea}{14}
+\contentsline {subsection}{\numberline {7.2}How does RNNs work in calculating alignment score ?}{14}
+\contentsline {subsection}{\numberline {7.3}Loss in unsupervised learning}{14}
+\contentsline {subsection}{\numberline {7.4}Agreement constraints}{15}
+\contentsline {subsection}{\numberline {7.5}Analysis}{15}
+\contentsline {subsubsection}{\numberline {7.5.1}Result}{16}
+\contentsline {section}{\numberline {8}Hierarchical Multiscale Recurrent Neural Networks \citep {Chung2016Hierarchical}}{16}
+\contentsline {subsection}{\numberline {8.1}Main idea}{16}
+\contentsline {subsection}{\numberline {8.2}Update mechanism}{17}
+\contentsline {subsection}{\numberline {8.3}Analysis}{18}
+\contentsline {section}{\numberline {9}Hybrid Neural Network alignment and Lexicon Model in direct HMM for Statistical Machine Translation}{18}
+\contentsline {part}{II\hspace {1em}Report}{19}
+\contentsline {section}{\numberline {10}Overview about statistical alignment }{19}
+\contentsline {subsection}{\numberline {10.1}Word-based alignment ? \cite {Och2003Systematic}}{19}
+\contentsline {subsection}{\numberline {10.2}Hidden Markov Alignment Model \cite {Och2003Systematic}}{19}
+\contentsline {subsubsection}{\numberline {10.2.1}Assumption about HMM alignment probability $p(a_j | a_{j-1}, I)$ or $p(i | i', I)$}{20}
+\contentsline {subsubsection}{\numberline {10.2.2}Extension: Empty word in target sentence}{21}
+\contentsline {subsubsection}{\numberline {10.2.3}Extension: Refinement of alignment}{21}
+\contentsline {section}{\numberline {11}Word alignment model in Neural Network}{21}
+\contentsline {subsection}{\numberline {11.1}Probability approach}{21}
+\contentsline {subsubsection}{\numberline {11.1.1}\cite {Tran16unsupervised}}{21}
+\contentsline {paragraph}{How to apply NN ?}{22}
+\contentsline {paragraph}{What is the problem of transition matrix in programming ?}{22}
+\contentsline {subsection}{\numberline {11.2}Non-probability - Score approach}{23}
+\contentsline {subsubsection}{\numberline {11.2.1}\cite {Yang13word}, \cite {Tamura14recurrent}}{23}
+\contentsline {section}{\numberline {12}Symmetrical alignment}{23}
+\contentsline {section}{\numberline {13}Techniques in Alignment}{23}
+\contentsline {subsection}{\numberline {13.1}Agreement between models}{23}
+\contentsline {section}{\numberline {14}Evaluation of a translation/alignment}{23}

@@ -363,6 +363,8 @@ where each $p_k(z_{i,j}|x; \theta_k)$ is the posterior marginal probability of t
 
 This posterior $q(z;x)$ could show the disagreement because this product $p_1(z|x ;\theta_1) p_2(z|x ;\theta_2)$ is small.
 
+\subsection{Analysis}
+This agreement approach does not guarantee to increase the joint objective. The experiment shows that it could provide an effective method of achieving model agreement and a significant accuracy gains over independent training.
 
 %----------------------------------------------------------------------------------------
 %	Word Alignment Modeling with Context Dependent Deep Neural Network
@@ -536,7 +538,7 @@ They highlight the role of agreement constraints in alignment performance improv
 %	Hierarchical Multiscale Recurrent Neural Networks
 %----------------------------------------------------------------------------------------
 
-\section{Hierarchical Multiscale Recurrent Neural Networks}
+\section{Hierarchical Multiscale Recurrent Neural Networks \citep{Chung2016Hierarchical}}
 
 \subsection{Main idea}
 Hierarchical Multi-scale RNNs learns the latent hierarchical structure of a sequence and its temporal representation with non-fixed timescales (Without explicit boundary information).
@@ -605,6 +607,11 @@ The difference between three operations are the use of context $c$ which keeps t
 \subsection{Analysis}
 The result for character-level language model does not show clearly a good performance.
 
+%----------------------------------------------------------------------------------------
+%	Hybrid Neural Network alignment and Lexicon Model in direct HMM for Statistical Machine Translation
+%----------------------------------------------------------------------------------------
+
+\section{Hybrid Neural Network alignment and Lexicon Model in direct HMM for Statistical Machine Translation}
 
 
 

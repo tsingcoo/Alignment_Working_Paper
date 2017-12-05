@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.8)  28 NOV 2017 15:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.8)  5 DEC 2017 18:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -200,7 +200,7 @@ e
 (./Paper_report.toc [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (10.08525pt too wide) in paragraph at lines 48--48
+Overfull \hbox (10.08525pt too wide) in paragraph at lines 50--50
  [][] []\OT1/cmr/m/n/10 Assumption about HMM align-ment prob-a-bil-ity $\OML/cm
 m/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it
 /10 a[]; I\OT1/cmr/m/n/10 )$ 
@@ -210,7 +210,7 @@ m/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it
 \tf@toc=\write3
 \openout3 = `Paper_report.toc'.
 
- [2]
+ [2] [3]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 43.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -230,7 +230,7 @@ t/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Z\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 X;
 ^^R\OT1/cmr/m/n/10 ))
  []
 
-[3]
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
@@ -247,12 +247,12 @@ Overfull \hbox (31.6809pt too wide) in paragraph at lines 108--109
 ML/cmm/m/it/10 W \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 w[]; :::; w[]; :::w[]$
  []
 
-[4]
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 119--122
 
  []
 
-[5] [6] [7]
+[6] [7] [8]
 Overfull \hbox (87.23282pt too wide) detected at line 248
 \OML/cmm/m/it/10 Loss[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^R[]\OMS/cmsy/m/n/10 
 j\OML/cmm/m/it/10 W\OT1/cmr/m/n/10 ) = \OMS/cmsy/m/n/10 ^^@[] [] [] \OML/cmm/m/
@@ -274,13 +274,13 @@ it/10 false\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 Wx[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m
 OT1/cmr/m/n/10 )
  []
 
-[8]
+[9]
 Overfull \hbox (3.77843pt too wide) in paragraph at lines 269--272
 []\OT1/cmr/m/n/10 Stopping con-di-tion/Best hyper-parameters se-lec-tion - Val-
 i-da-tion step: Sim-
  []
 
-[9]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 350--351
 
  []
@@ -301,8 +301,8 @@ t/10 z\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 ^^
 R[]\OT1/cmr/m/n/10 )$
  []
 
-[10]
-Overfull \hbox (21.33069pt too wide) detected at line 408
+[11] [12]
+Overfull \hbox (21.33069pt too wide) detected at line 410
 \OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]; a[]\OMS/cmsy/m/n/10 
 j\OML/cmm/m/it/10 e; f\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 (
 \OML/cmm/m/it/10 a[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 
@@ -311,8 +311,8 @@ j\OML/cmm/m/it/10 window\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 ))
 /m/n/10 (\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 ))
  []
 
-[11] [12]
-Overfull \hbox (34.9597pt too wide) detected at line 464
+[13]
+Overfull \hbox (34.9597pt too wide) detected at line 466
 \OML/cmm/m/it/10 s[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\OML
 /cmm/m/it/10 e[]; f[]\OT1/cmr/m/n/10 ) = [] \OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10
  (\OML/cmm/m/it/10 a[]; a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 window\OT1/cmr/m/
@@ -322,53 +322,53 @@ t/10 window\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 e[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/
 10 ; window\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 ))
  []
 
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 527--528
-
- []
-
-
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 529--530
 
  []
 
-
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 531--532
 
  []
 
 
-Overfull \hbox (3.17303pt too wide) in paragraph at lines 539--539
+Underfull \hbox (badness 10000) in paragraph at lines 533--534
+
+ []
+
+
+Overfull \hbox (3.17303pt too wide) in paragraph at lines 541--541
 []\OT1/cmr/bx/n/14.4 Hierarchical Mul-ti-scale Re-cur-rent Neu-ral Net-
  []
 
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 546--547
+
+Underfull \hbox (badness 10000) in paragraph at lines 548--549
 
  []
 
-[15] [16] [17]
-Underfull \hbox (badness 10000) in paragraph at lines 641--642
+[16] [17] [18]
+Underfull \hbox (badness 10000) in paragraph at lines 648--649
 
  []
 
-[18] [19]
-Underfull \hbox (badness 10000) in paragraph at lines 737--738
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 748--750
-
- []
-
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 753--756
+[19] [20]
+Underfull \hbox (badness 10000) in paragraph at lines 744--745
 
  []
 
 
-Overfull \hbox (43.39908pt too wide) in paragraph at lines 763--764
+Underfull \hbox (badness 10000) in paragraph at lines 755--757
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 760--763
+
+ []
+
+
+Overfull \hbox (43.39908pt too wide) in paragraph at lines 770--771
 []$\OT1/cmr/m/n/10 = [][] [][] \OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (\OML/cmm/m/
 it/10 a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 f[]; e[]\OT1/cmr/m/n/10 )  \OMS/cms
 y/m/n/10 5 \OML/cmm/m/it/10 log p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f[]\OMS/cm
@@ -379,12 +379,12 @@ OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 )]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 765--767
+Underfull \hbox (badness 10000) in paragraph at lines 772--774
 
  []
 
 
-Overfull \hbox (30.0854pt too wide) in paragraph at lines 768--769
+Overfull \hbox (30.0854pt too wide) in paragraph at lines 775--776
 []$\OML/cmm/m/it/10 J\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 ) = [
 ][] [][] \OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n
 /10 j\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 )  \OMS/cmsy/m/n/10 5 \OML/cmm/m/it/10
@@ -395,12 +395,12 @@ a[]; a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 )  \OMS/cmsy/m/n/
 /10 j\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 )]$ 
  []
 
-[21] [22] (./Paper_report.bbl) [23] (./Paper_report.aux) ) 
+[22] [23] (./Paper_report.bbl) [24] (./Paper_report.aux) ) 
 Here is how much of TeX's memory you used:
- 2493 strings out of 493029
- 33458 string characters out of 6136234
- 101918 words of memory out of 5000000
- 6006 multiletter control sequences out of 15000+600000
+ 2496 strings out of 493029
+ 33545 string characters out of 6136234
+ 101934 words of memory out of 5000000
+ 6009 multiletter control sequences out of 15000+600000
  10295 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,16n,28p,368b,259s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -420,10 +420,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmti10.pfb>
-Output written on Paper_report.pdf (23 pages, 249767 bytes).
+Output written on Paper_report.pdf (24 pages, 251139 bytes).
 PDF statistics:
- 142 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
+ 146 PDF objects out of 1000 (max. 8388607)
+ 102 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

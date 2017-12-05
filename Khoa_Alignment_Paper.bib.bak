@@ -128,7 +128,7 @@ url = {http://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neura
   url       = {http://aclweb.org/anthology/D15-1166}
 }
 
-@ARTICLE{Chung2016Hierarchical,
+@ARTICLE{Chung2016,
    author = {{Chung}, J. and {Ahn}, S. and {Bengio}, Y.},
     title = "{Hierarchical Multiscale Recurrent Neural Networks}",
   journal = {ArXiv e-prints},

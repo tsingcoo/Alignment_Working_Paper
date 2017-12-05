@@ -1,4 +1,9 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{Chung2016Hierarchical}
+J.~{Chung}, S.~{Ahn}, and Y.~{Bengio}.
+\newblock {Hierarchical Multiscale Recurrent Neural Networks}.
+\newblock {\em ArXiv e-prints}, September 2016.
 
 \bibitem{Conneau2017Word}
 A.~{Conneau}, G.~{Lample}, M.~{Ranzato}, L.~{Denoyer}, and H.~{J{\'e}gou}.
