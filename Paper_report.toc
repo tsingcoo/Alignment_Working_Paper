@@ -61,3 +61,5 @@
 \contentsline {section}{\numberline {13}Techniques in Alignment}{23}
 \contentsline {subsection}{\numberline {13.1}Agreement between models}{23}
 \contentsline {section}{\numberline {14}Evaluation of a translation/alignment}{23}
+\contentsline {section}{\numberline {15}HMM-NN Experiment}{23}
+\contentsline {subsection}{\numberline {15.1}Model 1: Simple NN-based Emission}{23}

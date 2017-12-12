@@ -3,6 +3,7 @@
 \usepackage{graphicx} % Required for the inclusion of images
 \usepackage{natbib} % Required to change bibliography style to APA
 \usepackage{amsmath} % Required for some math elements 
+\usepackage[]{algorithm2e}
 
 \setlength\parindent{0pt} % Removes all indentation from paragraphs
 
@@ -178,7 +179,7 @@ The analysis is based on POS tags experiments.
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
-%	What does Attention in NMT pay Attention to ?
+%	Confidence through Attention
 %----------------------------------------------------------------------------------------
 
 \section{Confidence through Attention \citep{Rikters2017confidence}}
@@ -538,7 +539,7 @@ They highlight the role of agreement constraints in alignment performance improv
 %	Hierarchical Multiscale Recurrent Neural Networks
 %----------------------------------------------------------------------------------------
 
-\section{Hierarchical Multiscale Recurrent Neural Networks}
+\section{Hierarchical Multiscale Recurrent Neural Networks \citep{Chung2016Hierarchical}}
 
 \subsection{Main idea}
 Hierarchical Multi-scale RNNs learns the latent hierarchical structure of a sequence and its temporal representation with non-fixed timescales (Without explicit boundary information).
@@ -612,6 +613,7 @@ The result for character-level language model does not show clearly a good perfo
 %----------------------------------------------------------------------------------------
 
 \section{Hybrid Neural Network alignment and Lexicon Model in direct HMM for Statistical Machine Translation}
+Alignment and Lexical Neural Network.
 
 
 
@@ -772,7 +774,10 @@ $ = \sum_{j=1}^J \sum_{a_j} p_{\theta'}(a_j|f_j,e_{a_j}) \, \bigtriangledown log
 \item We choose $a$ is state, $f$ is observation. We remove $e$.
 Therefore, \\
 
-$ J(\theta) = \sum_{j=1}^J \sum_{a_j} p_{\theta'}(a_j|f_j) \, \bigtriangledown log \, p_{\theta}(f_j | e_{a_j}) \quad + p_{\theta'}(a_j, a_{j-1}|f_j) \, \bigtriangledown log \, p_{\theta}(a_j | a_{j-1})  ] $
+\begin{equation}
+J(\theta) = \sum_{j=1}^J \sum_{a_j} p_{\theta'}(a_j|f_j) \, \bigtriangledown log \, p_{\theta}(f_j | e_{a_j}) \quad + p_{\theta'}(a_j, a_{j-1}|f_j) \, \bigtriangledown log \, p_{\theta}(a_j | a_{j-1})  ] 
+\label{Word Alignment Model Neural Network Gradient}
+\end{equation}
 
 \end{enumerate}
 
@@ -810,6 +815,75 @@ This method breaks the structure of the tensor tree. The cost calculated can not
 \item Confidence metric - Auto-evaluation: Coverage deviation penalty and Absentmindedness penalty \citep{Rikters2017confidence}
 
 \end{enumerate}
+
+\section{HMM-NN Experiment}
+\subsection{Model 1: Simple NN-based Emission}
+We review the equation \eqref{Word Alignment Model Neural Network Gradient}.
+
+$
+J(\theta) = \sum_{j=1}^J \sum_{a_j} p_{\theta'}(a_j|f_j) \, \bigtriangledown log \, p_{\theta}(f_j | e_{a_j}) \quad + p_{\theta'}(a_j, a_{j-1}|f_j) \, \bigtriangledown log \, p_{\theta}(a_j | a_{j-1})  ] 
+$
+
+becomes
+
+\begin{equation}
+J(\theta) = \sum_{j=1}^J \sum_{a_j} p_{\theta'}(a_j|f_j) \, \bigtriangledown log \, p_{\theta}(f_j | e_{a_j}) \quad
+\end{equation}
+
+
+\begin{itemize}
+\item \textbf{Emission matrix }$p_{\theta}(f_j | e_{a_j})$: We receive the target-language sentence and return the probabilities for all source-language vocabulary under Feed-Forward NN.
+
+\item \textbf{Emission posterior} $p_{\theta'}(a_j|f_j)$ : We set source-language sentence as a set of observation, Baum-Welch algorithm returns forward and backward messages with size (J * I)
+
+\item \textbf{Transition matrix} $p_{\theta}(a_j | a_{j-1})$: This matrix does not depend on the source-language and the target-language sentence. It depends on a set of jump distance.
+	\begin{enumerate}
+	\item Initialize jump distance set.
+	\item Create transition matrix T with size (I * J) from this jump distance set.
+	\item Create initial transition matrix  T0 with size (1 * I) randomly
+	\item Calculate forward and backward message from NN-based emission matrix, transition matrix T and intial transition matrix T0.
+	\item Emission posterior is forward * backward message (See\cite{Tran16unsupervised})
+	\end{enumerate}
+\end{itemize}
+
+
+\begin{algorithm}[H]
+\textbf{Input:}\\
+	\begin{itemize}
+	\item Source sentence: $f_1^J = f_1,...,f_j,...f_J$
+	\item Target sentence: $e_1^I = f_1,...,f_i,...f_I$
+	\end{itemize}
+\textbf{Initialization:} \\
+	\begin{itemize}
+	\item Initialize jump distance set JD
+	\end{itemize}
+\textbf{Training:} \\
+\While{each sentence pair $(f_1^J, e_1^I)$ in Training set}{
+	\begin{enumerate}
+	\item Get Emission matrix E with size $(I * V_{F})$ from NN
+	\item Get Transition matrix T $(I * I)$ from \textbf{JD}
+	\item Select randomly Initial transition matrix T0 with $(1 * I)$
+	\item Get forward $\alpha$ and backward $\beta$ message with size $(J*I)$
+	\item Get Emission posterior $EP = \alpha * \beta $, Normalize EP and Reshape EP with size $(I * V_{F})$
+	\item Get expected-T $(I * I)$ from E, T, $\alpha$, $\beta$
+	\item Update \textbf{JD} from expected-T
+	\end{enumerate}
+	
+ }
+ \textbf{Validation:} \\
+ \While{each sentence pair $(f_1^J, e_1^I)$ in Validation set}{
+	\begin{enumerate}
+	\item Get Emission matrix E with size $(I * V_{F})$ from NN
+	\item Get Transition matrix T $(2I * 2I)$ with Null tokens from \textbf{JD}
+	\item Select randomly Initial transition matrix T0 with $(1 * 2I)$
+	\item Get location pair $(J * 2I)$ with Viterbi from E with size $(2I * V_{F})$ and T with $(2I * 2I)$
+	\item Calculate AER
+	\end{enumerate}
+	
+ }
+ 
+ \caption{Model 1}
+\end{algorithm}
 
 
 %----------------------------------------------------------------------------------------

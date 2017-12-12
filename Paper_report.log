@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.8)  5 DEC 2017 18:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.8)  12 DEC 2017 14:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -120,34 +120,90 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 LaTeX Info: Redefining \[ on input line 2735.
 LaTeX Info: Redefining \] on input line 2736.
 )
-(./Paper_report.aux)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2013/01/06 v5.00 algorithms environments
+\c@AlgoLine=\count101
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\algocf@hangindent=\skip48
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+********************************************************
+Package `algorithm2e' Release 5.1 -- october 19 2015 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (christophe.fiorio@umontpellier.fr)
+********************************************************
+\skiptotal=\skip49
+\skiplinenumber=\skip50
+\skiprule=\skip51
+\skiphlne=\skip52
+\skiptext=\skip53
+\skiplength=\skip54
+\algomargin=\skip55
+\skipalgocfslide=\skip56
+\algowidth=\dimen114
+\inoutsize=\dimen115
+\inoutindent=\dimen116
+\interspacetitleruled=\dimen117
+\interspacealgoruled=\dimen118
+\interspacetitleboxruled=\dimen119
+\algocf@ruledwidth=\skip57
+\algocf@inoutbox=\box28
+\algocf@inputbox=\box29
+\AlCapSkip=\skip58
+\AlCapHSkip=\skip59
+\algoskipindent=\skip60
+\algocf@nlbox=\box30
+\algocf@hangingbox=\box31
+\algocf@untilbox=\box32
+\algocf@skipuntil=\skip61
+\algocf@capbox=\box33
+\algoheightruledefault=\skip62
+\algoheightrule=\skip63
+\algotitleheightruledefault=\skip64
+\algotitleheightrule=\skip65
+\c@algocfline=\count102
+\c@algocfproc=\count103
+\c@algocf=\count104
+\algocf@algoframe=\box34
+\algocf@algobox=\box35
+) (./Paper_report.aux)
 \openout1 = `Paper_report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count101
-\scratchdimen=\dimen114
-\scratchbox=\box28
-\nofMPsegments=\count102
-\nofMParguments=\count103
+\scratchcounter=\count105
+\scratchdimen=\dimen120
+\scratchbox=\box36
+\nofMPsegments=\count106
+\nofMParguments=\count107
 \everyMPshowfont=\toks20
-\MPscratchCnt=\count104
-\MPscratchDim=\dimen115
-\MPnumerator=\count105
-\makeMPintoPDFobject=\count106
+\MPscratchCnt=\count108
+\MPscratchDim=\dimen121
+\MPnumerator=\count109
+\makeMPintoPDFobject=\count110
 \everyMPtoPDFconversion=\toks21
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -206,19 +262,19 @@ m/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it
 /10 a[]; I\OT1/cmr/m/n/10 )$ 
  []
 
-)
+[2])
 \tf@toc=\write3
 \openout3 = `Paper_report.toc'.
 
- [2] [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 43.
+ [3]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 44.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 43.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 44.
 
-Overfull \hbox (18.13988pt too wide) detected at line 56
+Overfull \hbox (18.13988pt too wide) detected at line 57
 \OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = [] \OM
 L/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X; Z\OT1/cmr/m/n/10 ) = \OML/c
 mm/m/it/10 E[]\OT1/cmr/m/n/10 [[] \OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m
@@ -231,29 +287,29 @@ t/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Z\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 X;
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
 
 
-Overfull \hbox (31.6809pt too wide) in paragraph at lines 108--109
+Overfull \hbox (31.6809pt too wide) in paragraph at lines 109--110
 []\OT1/cmr/m/n/10 Input: A sen-tence $\OML/cmm/m/it/10 X \OT1/cmr/m/n/10 = \OML
 /cmm/m/it/10 x[]; :::; x[]; :::x[]$\OT1/cmr/m/n/10 , a set of vo-cab-u-lary $\O
 ML/cmm/m/it/10 W \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 w[]; :::; w[]; :::w[]$
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 119--122
+Underfull \hbox (badness 10000) in paragraph at lines 120--123
 
  []
 
 [6] [7] [8]
-Overfull \hbox (87.23282pt too wide) detected at line 248
+Overfull \hbox (87.23282pt too wide) detected at line 249
 \OML/cmm/m/it/10 Loss[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^R[]\OMS/cmsy/m/n/10 
 j\OML/cmm/m/it/10 W\OT1/cmr/m/n/10 ) = \OMS/cmsy/m/n/10 ^^@[] [] [] \OML/cmm/m/
 it/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 source \OT1/cmr/m/n/10 = \OML/cmm/m/
@@ -264,7 +320,7 @@ OT1/cmr/m/n/10 )
  []
 
 
-Overfull \hbox (89.0763pt too wide) detected at line 254
+Overfull \hbox (89.0763pt too wide) detected at line 255
 \OML/cmm/m/it/10 Loss[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 W\OMS/cmsy/m/n/10 j\OM
 L/cmm/m/it/10 ^^R[]\OT1/cmr/m/n/10 ) = \OMS/cmsy/m/n/10 ^^@[] [] [] \OML/cmm/m/
 it/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 source \OT1/cmr/m/n/10 = \OML/cmm/m/
@@ -275,23 +331,23 @@ OT1/cmr/m/n/10 )
  []
 
 [9]
-Overfull \hbox (3.77843pt too wide) in paragraph at lines 269--272
+Overfull \hbox (3.77843pt too wide) in paragraph at lines 270--273
 []\OT1/cmr/m/n/10 Stopping con-di-tion/Best hyper-parameters se-lec-tion - Val-
 i-da-tion step: Sim-
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+Underfull \hbox (badness 10000) in paragraph at lines 351--352
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 361--363
+Underfull \hbox (badness 10000) in paragraph at lines 362--364
 
  []
 
 
-Overfull \hbox (52.02483pt too wide) in paragraph at lines 364--365
+Overfull \hbox (52.02483pt too wide) in paragraph at lines 365--366
 []\OT1/cmr/m/n/10 This pos-te-rior $\OML/cmm/m/it/10 q\OT1/cmr/m/n/10 (\OML/cmm
 /m/it/10 z\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$ could show the
  dis-agree-ment be-cause this prod-uct $\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (\O
@@ -302,7 +358,7 @@ R[]\OT1/cmr/m/n/10 )$
  []
 
 [11] [12]
-Overfull \hbox (21.33069pt too wide) detected at line 410
+Overfull \hbox (21.33069pt too wide) detected at line 411
 \OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]; a[]\OMS/cmsy/m/n/10 
 j\OML/cmm/m/it/10 e; f\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 (
 \OML/cmm/m/it/10 a[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 
@@ -312,7 +368,7 @@ j\OML/cmm/m/it/10 window\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 ))
  []
 
 [13]
-Overfull \hbox (34.9597pt too wide) detected at line 466
+Overfull \hbox (34.9597pt too wide) detected at line 467
 \OML/cmm/m/it/10 s[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\OML
 /cmm/m/it/10 e[]; f[]\OT1/cmr/m/n/10 ) = [] \OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10
  (\OML/cmm/m/it/10 a[]; a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 window\OT1/cmr/m/
@@ -323,52 +379,52 @@ t/10 window\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 e[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 529--530
+Underfull \hbox (badness 10000) in paragraph at lines 530--531
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 531--532
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 533--534
+Underfull \hbox (badness 10000) in paragraph at lines 534--535
 
  []
 
 
-Overfull \hbox (3.17303pt too wide) in paragraph at lines 541--541
+Overfull \hbox (3.17303pt too wide) in paragraph at lines 542--542
 []\OT1/cmr/bx/n/14.4 Hierarchical Mul-ti-scale Re-cur-rent Neu-ral Net-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 548--549
+Underfull \hbox (badness 10000) in paragraph at lines 549--550
 
  []
 
 [16] [17] [18]
-Underfull \hbox (badness 10000) in paragraph at lines 648--649
+Underfull \hbox (badness 10000) in paragraph at lines 649--650
 
  []
 
 [19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 744--745
+Underfull \hbox (badness 10000) in paragraph at lines 745--746
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 755--757
+Underfull \hbox (badness 10000) in paragraph at lines 756--758
 
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 760--763
+Underfull \hbox (badness 10000) in paragraph at lines 761--764
 
  []
 
 
-Overfull \hbox (43.39908pt too wide) in paragraph at lines 770--771
+Overfull \hbox (43.39908pt too wide) in paragraph at lines 771--772
 []$\OT1/cmr/m/n/10 = [][] [][] \OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (\OML/cmm/m/
 it/10 a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 f[]; e[]\OT1/cmr/m/n/10 )  \OMS/cms
 y/m/n/10 5 \OML/cmm/m/it/10 log p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f[]\OMS/cm
@@ -379,12 +435,24 @@ OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 )]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--774
+Underfull \hbox (badness 10000) in paragraph at lines 773--775
 
  []
 
 
-Overfull \hbox (30.0854pt too wide) in paragraph at lines 775--776
+Overfull \hbox (14.95107pt too wide) detected at line 779
+\OML/cmm/m/it/10 J\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 ) = [] [
+] \OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\O
+ML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 )  \OMS/cmsy/m/n/10 5 \OML/cmm/m/it/10 log p[
+]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 e[]\OT
+1/cmr/m/n/10 )  + \OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]; a[
+]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 )  \OMS/cmsy/m/n/10 5 \O
+ML/cmm/m/it/10 log p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\O
+ML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 )]
+ []
+
+[22]
+Overfull \hbox (5.08537pt too wide) in paragraph at lines 822--825
 []$\OML/cmm/m/it/10 J\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 ) = [
 ][] [][] \OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n
 /10 j\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 )  \OMS/cmsy/m/n/10 5 \OML/cmm/m/it/10
@@ -395,35 +463,40 @@ a[]; a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 )  \OMS/cmsy/m/n/
 /10 j\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 )]$ 
  []
 
-[22] [23] (./Paper_report.bbl) [24] (./Paper_report.aux) ) 
+[23]
+Overfull \hbox (30.40001pt too wide) detected at line 885
+[][] 
+ []
+
+[24] (./Paper_report.bbl) [25] (./Paper_report.aux) ) 
 Here is how much of TeX's memory you used:
- 2496 strings out of 493029
- 33545 string characters out of 6136234
- 101934 words of memory out of 5000000
- 6009 multiletter control sequences out of 15000+600000
+ 3462 strings out of 493029
+ 48951 string characters out of 6136234
+ 126899 words of memory out of 5000000
+ 6961 multiletter control sequences out of 15000+600000
  10295 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,16n,28p,368b,259s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmti10.pfb>
-Output written on Paper_report.pdf (24 pages, 251139 bytes).
+ 38i,16n,28p,368b,355s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmti10.pfb>
+Output written on Paper_report.pdf (25 pages, 254771 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 102 compressed objects within 2 object streams
+ 150 PDF objects out of 1000 (max. 8388607)
+ 105 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
