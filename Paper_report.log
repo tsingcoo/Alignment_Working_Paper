@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.8)  13 DEC 2017 16:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.8)  13 DEC 2017 17:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -424,32 +424,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 665--665
  []
 
 
-Overfull \hbox (24.62296pt too wide) in paragraph at lines 686--686
+Overfull \hbox (24.62296pt too wide) in paragraph at lines 688--688
 []\OT1/cmr/bx/n/14.4 Neural Network-based Word Align-ment through
  []
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 735--736
+Underfull \hbox (badness 10000) in paragraph at lines 737--738
 
  []
 
 [20] [21]
-Underfull \hbox (badness 10000) in paragraph at lines 832--833
+Underfull \hbox (badness 10000) in paragraph at lines 835--836
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 843--845
+Underfull \hbox (badness 10000) in paragraph at lines 846--848
 
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 848--851
+Underfull \hbox (badness 10000) in paragraph at lines 851--854
 
  []
 
 
-Overfull \hbox (43.39908pt too wide) in paragraph at lines 858--859
+Overfull \hbox (43.39908pt too wide) in paragraph at lines 861--862
 []$\OT1/cmr/m/n/10 = [][] [][] \OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (\OML/cmm/m/
 it/10 a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 f[]; e[]\OT1/cmr/m/n/10 )  \OMS/cms
 y/m/n/10 5 \OML/cmm/m/it/10 log p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f[]\OMS/cm
@@ -460,12 +460,12 @@ OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 )]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 860--862
+Underfull \hbox (badness 10000) in paragraph at lines 863--865
 
  []
 
 
-Overfull \hbox (14.95107pt too wide) detected at line 866
+Overfull \hbox (14.95107pt too wide) detected at line 869
 \OML/cmm/m/it/10 J\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 ) = [] [
 ] \OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\O
 ML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 )  \OMS/cmsy/m/n/10 5 \OML/cmm/m/it/10 log p[
@@ -477,12 +477,12 @@ ML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 )]
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 892--896
+Underfull \hbox (badness 10000) in paragraph at lines 895--899
 
  []
 
 
-Overfull \hbox (5.08537pt too wide) in paragraph at lines 924--927
+Overfull \hbox (5.08537pt too wide) in paragraph at lines 927--930
 []$\OML/cmm/m/it/10 J\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 ) = [
 ][] [][] \OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n
 /10 j\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 )  \OMS/cmsy/m/n/10 5 \OML/cmm/m/it/10
@@ -494,7 +494,7 @@ a[]; a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 )  \OMS/cmsy/m/n/
  []
 
 [24]
-Overfull \hbox (30.40001pt too wide) detected at line 987
+Overfull \hbox (30.40001pt too wide) detected at line 990
 [][] 
  []
 
@@ -523,7 +523,7 @@ sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share
 -dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmti10.pfb>
-Output written on Paper_report.pdf (28 pages, 263749 bytes).
+Output written on Paper_report.pdf (28 pages, 263771 bytes).
 PDF statistics:
  159 PDF objects out of 1000 (max. 8388607)
  111 compressed objects within 2 object streams

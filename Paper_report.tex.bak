@@ -680,6 +680,8 @@ This lexical alignment model uses the context of $e^{a_{j-1}}$ and $f_j$.
 \section{HMM Word and Phrase Alignment for Statistical Machine Translation \citep{Deng2008HMM} }
 
 
+
+
 %----------------------------------------------------------------------------------------
 %	Neural Network-based Word Alignment through Score Aggregation
 %----------------------------------------------------------------------------------------

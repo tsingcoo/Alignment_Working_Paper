@@ -680,6 +680,8 @@ This lexical alignment model uses the context of $e^{a_{j-1}}$ and $f_j$.
 \section{HMM Word and Phrase Alignment for Statistical Machine Translation \citep{Deng2008HMM} }
 
 
+
+
 %----------------------------------------------------------------------------------------
 %	Neural Network-based Word Alignment through Score Aggregation
 %----------------------------------------------------------------------------------------
@@ -737,6 +739,7 @@ In this case, the translation direction is changed from $p(e_1^I|f_1^J)$ to $p(f
 From now, the work of translation is modeling $p(f_1^J|e_1^I)$. Our work is more complicated by adding an alignment component $a_1^J$ which maps from a source position j to a target position $a_j$ (It could be i, but there is also empty words).
 
 \begin{equation}
+p(f_1^J|e_1^I) = \sum_{a_1^J} p(f_1^J, a_1^J|e_1^I)
 \end{equation}
 
 With the model parameters $\theta$, our main problem becomes $p_{\theta}(f_1^J, a_1^J|e_1^I)$
