@@ -412,6 +412,7 @@ s_{NN}(a|e, f) = \prod_{i = 1}^{|e|} t_{lex}(e_{i},f_{a_{i}}|e,f) t_{d}(a_{i},a_
 	They recognize that this lexicalized distortion does not produce a better alignment. They reverse to the simple version.
 	\begin{equation}
 	t_{d}(a_{i}, a_{i-1}|e,f) = t_{d}(a_{i} - a_{i-1})
+	\label{Yang13word Alignment Translation Score}
 	\end{equation}
 	\end{itemize}
 
@@ -470,6 +471,7 @@ It is modified for RNNs:
 
 \begin{equation}
 s_{NN}(a_1^ J|e_1^ I, f_1^ J) = \prod_{j = 1}^{J} t_{RNN}(a_{j}|a_1^{j-1},e_{a_{j}},f_j  )
+\label{Tamura14recurrent Alignment score}
 \end{equation}
 
 \subsection{Loss in unsupervised learning} 
@@ -608,12 +610,95 @@ The difference between three operations are the use of context $c$ which keeps t
 \subsection{Analysis}
 The result for character-level language model does not show clearly a good performance.
 
+
+
+
+%----------------------------------------------------------------------------------------
+%	Alignment-based Neural Machine Translation
+%----------------------------------------------------------------------------------------
+
+\section{Alignment-based Neural Machine Translation \citep{Alkhouli2016AlignmentBasedNM} }
+
+
+
+
+
 %----------------------------------------------------------------------------------------
 %	Hybrid Neural Network alignment and Lexicon Model in direct HMM for Statistical Machine Translation
 %----------------------------------------------------------------------------------------
 
-\section{Hybrid Neural Network alignment and Lexicon Model in direct HMM for Statistical Machine Translation}
-Alignment and Lexical Neural Network.
+\section{Hybrid Neural Network alignment and Lexicon Model in direct HMM for Statistical Machine Translation \citep{Wang2017HybridNN} }
+The main idea is using NN for both alignment and lexicon model of HMM. These two models are trained jointly using the Baum-Welch algorithm.
+
+The experiment is not for word-based alignment but phrase-based translation, which increases 1\% of BLEU score.
+
+\subsection{NN-based Alignment and Lexical model}
+They define the alignment $b_{i} = i \rightarrow j $ (Not $a_{j} = j \rightarrow i $). Review the equation \eqref{Hidden Markov Alignment Model p(f, a|e)}. \\
+$p(e_1^I, b_1^I|f_1^J) = \prod_{i=1}^I p(e_i, b_i | b_1^{i-1}, e_1^{i-1}, f_1^J)
+$\\
+$ = \prod_{i=1}^I p( e_i | e_1^{i-1}, b_1^i, f_1^J) * p( b_i |b_1^{i-1}, e_1^{i-1}, f_1^J)
+$
+
+\begin{itemize}
+\item Alignment model: $p( b_i |b_1^{i-1}, e_1^{i-1},  f_1^J) = p(b_i - b_{i-1}| f^{b_{i-1} + \gamma m}_{b_{i-1} - \gamma m}, e_{i-n}^{i-1})$ \\
+where $\gamma m = \dfrac{m-1}{2}$ and n, m indicate window size.\\
+\marginpar{See Figure 1 in \citep{Wang2017HybridNN}}
+This lexical alignment model uses the context of $f^{b_{i-1}}$ and $e_i$.
+
+\item Lexical model: $p( e_i | e_1^{i-1}, b_1^{i}, f_1^J) = p(e_i|f^{b_{i} + \gamma m}_{b_{i} - \gamma m}, e_{i-n}^{i-1}  )$\\
+$= p(e_i| \: c(e_i),f^{b_{i} + \gamma m}_{b_{i} - \gamma m}, e_{i-n}^{i-1}) * p(c(e_i)|f^{b_{i} + \gamma m}_{b_{i} - \gamma m}, e_{i-n}^{i-1})$\\
+For this case, they apply class-factored output layer consisting a class layer (Class probability) and a word layer (Word probability for each class), which reduces the problem of large vocabulary. The word class is applied to target language $e$.
+\end{itemize}
+
+I rewrite under the notation of $a_{j}$.
+Review the equation \eqref{Hidden Markov Alignment Model p(f, a|e)}. \\
+$p(f_1^J, a_1^J|e_1^I) = \prod_{j=1}^J p(f_j, a_j | f_1^{j-1}, a_1^{j-1}, e_1^I)
+$\\
+$ = \prod_{j=1}^J p( f_j | f_1^{j-1}, a_j, e_1^I) * p( a_j |a_1^{j-1}, f_1^{j-1},  e_1^I)
+$
+
+\begin{itemize}
+\item Alignment model: $p( a_j |a_1^{j-1}, f_1^{j-1},  e_1^I) = p(a_j - a_{j-1}| e^{a_{j-1} + \gamma m}_{a_{j-1} - \gamma m}, f_{j-n}^{j-1})$ \\
+This lexical alignment model uses the context of $e^{a_{j-1}}$ and $f_j$.
+
+\item Lexical model: $p( f_j | f_1^{j-1}, a_j, e_1^I) = p(f_j|e^{a_{j} + \gamma m}_{a_{j} - \gamma m}, f_{j-n}^{j-1})  )$
+\marginpar{Class-factored output layer for target or source language ?}
+\end{itemize}
+
+\subsection{Objective function}
+
+\subsection{Algorithm}
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	HMM Word and Phrase Alignment for Statistical Machine Translation
+%----------------------------------------------------------------------------------------
+
+\section{HMM Word and Phrase Alignment for Statistical Machine Translation \citep{Deng2008HMM} }
+
+
+%----------------------------------------------------------------------------------------
+%	Neural Network-based Word Alignment through Score Aggregation
+%----------------------------------------------------------------------------------------
+\section{Neural Network-based Word Alignment through Score Aggregation \citep{Legrand16neural}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -669,6 +754,7 @@ p(f_1^J, a_1^J|e_1^I) = p(J|e_1^I) \prod_{j=1}^J p(f_j, a_j | f_1^{j-1}, a_1^{j-
 \end{equation}
 \begin{equation}
 = p(J|e_1^I) \prod_{j=1}^J p( f_j | f_1^{j-1}, a_j, e_1^I) * p( a_j | f_1^{j-1}, a_1^{j-1}, e_1^I)
+\label{Hidden Markov Alignment Model p(f, a|e)}
 \end{equation}
 
 For this new structure, there are three different probabilities:
@@ -785,6 +871,7 @@ J(\theta) = \sum_{j=1}^J \sum_{a_j} p_{\theta'}(a_j|f_j) \, \bigtriangledown log
 \begin{itemize}
 \item Emission matrix $p_{\theta}(f_j | e_{a_j})$: It is not the normal way of translation. We receive the target-language sentence and return the probabilities for all source-language vocabulary.
 \item Transition matrix $p_{\theta}(a_j | a_{j-1})$: We receive the target-language sentence and return this matrix.
+
 \item The posteriors $p_{\theta'}(a_j|f_j)$ and $p_{\theta'}(a_j, a_{j-1}|f_j)$ : We set source-language sentence as a set of observation, Baum-Welch algorithm returns forward and backward messages (How is the size of these messages)
 \end{itemize}
 
@@ -798,14 +885,28 @@ This method breaks the structure of the tensor tree. The cost calculated can not
 \subsection{Non-probability - Score approach}
 \subsubsection{\cite{Yang13word}, \cite{Tamura14recurrent}}
 
+\subsection{NN-based Alignment under jump-distance approach}
+\cite{Yang13word} recognize that the lexicalized distortion does not produce better alignment over the simple jump-distance based model (Not NN, randomly created), based on their experiment of small data. Therefore, they do not use target-language or source-language word for alignment. $t(a_{j}, a_{j-1}|e,f) = t(a_{j} - a_{j-1})$\\
+\marginpar{ See \eqref{Yang13word Alignment Translation Score} }
+
+\citep{Tamura14recurrent} continue the work of \citep{Yang13word} but reuse lexicalized distortion combined with RNN.
+$t(a_{j}, a_{j-1}|e,f) = t_{RNN}(a_{j} - a_{j-1}| a_{1}^{j-1}, f_j, e_{a_j})$\\
+\marginpar{See \eqref{Tamura14recurrent Alignment score}}
+One point important is that there is a different set of parameter for each distance.\\
+
+\citep{Alkhouli2016AlignmentBasedNM}, \citep{Wang2017HybridNN} use the context of $f_j$ and $e_{a_j}$. They do not use RNN, just simple FFNN.
+$p( a_j, a_{j-1}| f,  e) = p(a_{j} - a_{j-1}| e^{a_{j-1} + \gamma m}_{a_{j-1} - \gamma m}, f_{j-n}^{j-1})$ where $\gamma$, $n$ are window sizes.
+
 
 
 \section{Symmetrical alignment}
 
 
 \section{Techniques in Alignment}
-
 \subsection{Agreement between models}
+
+\subsection{Word class for large vocabulary}
+
 
 \section{Evaluation of a translation/alignment}
 \begin{enumerate}

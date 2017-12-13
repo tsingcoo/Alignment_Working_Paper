@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{Alkhouli2016AlignmentBasedNM}
+Tamer Alkhouli, Gabriel Bretschner, Jan-Thorsten Peter, Mohammed Hethnawi,
+  Andreas Guta, and Hermann Ney.
+\newblock Alignment-based neural machine translation.
+\newblock In {\em WMT}, 2016.
+
 \bibitem{Chung2016Hierarchical}
 J.~{Chung}, S.~{Ahn}, and Y.~{Bengio}.
 \newblock {Hierarchical Multiscale Recurrent Neural Networks}.
@@ -10,10 +16,23 @@ A.~{Conneau}, G.~{Lample}, M.~{Ranzato}, L.~{Denoyer}, and H.~{J{\'e}gou}.
 \newblock {Word Translation Without Parallel Data}.
 \newblock {\em ArXiv e-prints}, October 2017.
 
+\bibitem{Deng2008HMM}
+Y.~Deng and W.~Byrne.
+\newblock Hmm word and phrase alignment for statistical machine translation.
+\newblock {\em IEEE Transactions on Audio, Speech, and Language Processing},
+  16(3):494--507, March 2008.
+
 \bibitem{Ghader2017what}
 H.~{Ghader} and C.~{Monz}.
 \newblock {What does Attention in Neural Machine Translation Pay Attention to?}
 \newblock {\em ArXiv e-prints}, October 2017.
+
+\bibitem{Legrand16neural}
+Jo\"{e}l Legrand, Michael Auli, and Ronan Collobert.
+\newblock Neural network-based word alignment through score aggregation.
+\newblock In {\em Proceedings of the First Conference on Machine Translation},
+  pages 66--73, Berlin, Germany, August 2016. Association for Computational
+  Linguistics.
 
 \bibitem{Liang2006Alignment}
 Percy Liang, Ben Taskar, and Dan Klein.
@@ -51,6 +70,12 @@ Stephan Vogel, Hermann Ney, and Christoph Tillmann.
 \newblock In {\em Proceedings of the 16th Conference on Computational
   Linguistics - Volume 2}, COLING '96, pages 836--841, Stroudsburg, PA, USA,
   1996. Association for Computational Linguistics.
+
+\bibitem{Wang2017HybridNN}
+Weiyue Wang, Tamer Alkhouli, Derui Zhu, and Hermann Ney.
+\newblock Hybrid neural network alignment and lexicon model in direct hmm for
+  statistical machine translation.
+\newblock In {\em ACL}, 2017.
 
 \bibitem{Yang13word}
 Nan Yang, Shujie Liu, Mu~Li, Ming Zhou, and Nenghai Yu.

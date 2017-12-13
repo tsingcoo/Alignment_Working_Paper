@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.8)  12 DEC 2017 14:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.8)  13 DEC 2017 16:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -256,7 +256,7 @@ e
 (./Paper_report.toc [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (10.08525pt too wide) in paragraph at lines 50--50
+Overfull \hbox (10.08525pt too wide) in paragraph at lines 56--56
  [][] []\OT1/cmr/m/n/10 Assumption about HMM align-ment prob-a-bil-ity $\OML/cm
 m/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it
 /10 a[]; I\OT1/cmr/m/n/10 )$ 
@@ -368,7 +368,7 @@ j\OML/cmm/m/it/10 window\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 ))
  []
 
 [13]
-Overfull \hbox (34.9597pt too wide) detected at line 467
+Overfull \hbox (34.9597pt too wide) detected at line 468
 \OML/cmm/m/it/10 s[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\OML
 /cmm/m/it/10 e[]; f[]\OT1/cmr/m/n/10 ) = [] \OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10
  (\OML/cmm/m/it/10 a[]; a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 window\OT1/cmr/m/
@@ -379,52 +379,77 @@ t/10 window\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 e[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 530--531
-
- []
-
-[15]
 Underfull \hbox (badness 10000) in paragraph at lines 532--533
 
  []
 
-
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 534--535
 
  []
 
 
-Overfull \hbox (3.17303pt too wide) in paragraph at lines 542--542
+Underfull \hbox (badness 10000) in paragraph at lines 536--537
+
+ []
+
+
+Overfull \hbox (3.17303pt too wide) in paragraph at lines 544--544
 []\OT1/cmr/bx/n/14.4 Hierarchical Mul-ti-scale Re-cur-rent Neu-ral Net-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 549--550
+Underfull \hbox (badness 10000) in paragraph at lines 551--552
 
  []
 
 [16] [17] [18]
-Underfull \hbox (badness 10000) in paragraph at lines 649--650
-
- []
-
-[19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 745--746
-
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+[]\OT1/cmr/m/n/10 Class-factored
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 756--758
-
- []
-
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 761--764
-
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+\OT1/cmr/m/n/10 out-put layer
  []
 
 
-Overfull \hbox (43.39908pt too wide) in paragraph at lines 771--772
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+\OT1/cmr/m/n/10 for tar-get
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+\OT1/cmr/m/n/10 or source
+ []
+
+
+Overfull \hbox (24.62296pt too wide) in paragraph at lines 686--686
+[]\OT1/cmr/bx/n/14.4 Neural Network-based Word Align-ment through
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 735--736
+
+ []
+
+[20] [21]
+Underfull \hbox (badness 10000) in paragraph at lines 832--833
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 843--845
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 848--851
+
+ []
+
+
+Overfull \hbox (43.39908pt too wide) in paragraph at lines 858--859
 []$\OT1/cmr/m/n/10 = [][] [][] \OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (\OML/cmm/m/
 it/10 a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 f[]; e[]\OT1/cmr/m/n/10 )  \OMS/cms
 y/m/n/10 5 \OML/cmm/m/it/10 log p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f[]\OMS/cm
@@ -435,12 +460,12 @@ OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 )]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 773--775
+Underfull \hbox (badness 10000) in paragraph at lines 860--862
 
  []
 
 
-Overfull \hbox (14.95107pt too wide) detected at line 779
+Overfull \hbox (14.95107pt too wide) detected at line 866
 \OML/cmm/m/it/10 J\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 ) = [] [
 ] \OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\O
 ML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 )  \OMS/cmsy/m/n/10 5 \OML/cmm/m/it/10 log p[
@@ -451,8 +476,13 @@ ML/cmm/m/it/10 log p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\O
 ML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 )]
  []
 
-[22]
-Overfull \hbox (5.08537pt too wide) in paragraph at lines 822--825
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 892--896
+
+ []
+
+
+Overfull \hbox (5.08537pt too wide) in paragraph at lines 924--927
 []$\OML/cmm/m/it/10 J\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 ) = [
 ][] [][] \OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n
 /10 j\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 )  \OMS/cmsy/m/n/10 5 \OML/cmm/m/it/10
@@ -463,40 +493,40 @@ a[]; a[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 )  \OMS/cmsy/m/n/
 /10 j\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 )]$ 
  []
 
-[23]
-Overfull \hbox (30.40001pt too wide) detected at line 885
+[24]
+Overfull \hbox (30.40001pt too wide) detected at line 987
 [][] 
  []
 
-[24] (./Paper_report.bbl) [25] (./Paper_report.aux) ) 
+[25] [26] (./Paper_report.bbl [27]) [28] (./Paper_report.aux) ) 
 Here is how much of TeX's memory you used:
- 3462 strings out of 493029
- 48951 string characters out of 6136234
- 126899 words of memory out of 5000000
- 6961 multiletter control sequences out of 15000+600000
+ 3478 strings out of 493029
+ 49381 string characters out of 6136234
+ 126993 words of memory out of 5000000
+ 6977 multiletter control sequences out of 15000+600000
  10295 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,16n,28p,368b,355s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-mi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmti10.pfb>
-Output written on Paper_report.pdf (25 pages, 254771 bytes).
+</usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmti10.pfb>
+Output written on Paper_report.pdf (28 pages, 263749 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
- 105 compressed objects within 2 object streams
+ 159 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

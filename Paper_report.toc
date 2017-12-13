@@ -42,24 +42,32 @@
 \contentsline {subsection}{\numberline {8.1}Main idea}{16}
 \contentsline {subsection}{\numberline {8.2}Update mechanism}{17}
 \contentsline {subsection}{\numberline {8.3}Analysis}{18}
-\contentsline {section}{\numberline {9}Hybrid Neural Network alignment and Lexicon Model in direct HMM for Statistical Machine Translation}{18}
-\contentsline {part}{II\hspace {1em}Report}{19}
-\contentsline {section}{\numberline {10}Overview about statistical alignment }{19}
-\contentsline {subsection}{\numberline {10.1}Word-based alignment ? \cite {Och2003Systematic}}{19}
-\contentsline {subsection}{\numberline {10.2}Hidden Markov Alignment Model \cite {Och2003Systematic}}{19}
-\contentsline {subsubsection}{\numberline {10.2.1}Assumption about HMM alignment probability $p(a_j | a_{j-1}, I)$ or $p(i | i', I)$}{20}
-\contentsline {subsubsection}{\numberline {10.2.2}Extension: Empty word in target sentence}{21}
-\contentsline {subsubsection}{\numberline {10.2.3}Extension: Refinement of alignment}{21}
-\contentsline {section}{\numberline {11}Word alignment model in Neural Network}{21}
-\contentsline {subsection}{\numberline {11.1}Probability approach}{21}
-\contentsline {subsubsection}{\numberline {11.1.1}\cite {Tran16unsupervised}}{21}
-\contentsline {paragraph}{How to apply NN ?}{22}
-\contentsline {paragraph}{What is the problem of transition matrix in programming ?}{22}
-\contentsline {subsection}{\numberline {11.2}Non-probability - Score approach}{23}
-\contentsline {subsubsection}{\numberline {11.2.1}\cite {Yang13word}, \cite {Tamura14recurrent}}{23}
-\contentsline {section}{\numberline {12}Symmetrical alignment}{23}
-\contentsline {section}{\numberline {13}Techniques in Alignment}{23}
-\contentsline {subsection}{\numberline {13.1}Agreement between models}{23}
-\contentsline {section}{\numberline {14}Evaluation of a translation/alignment}{23}
-\contentsline {section}{\numberline {15}HMM-NN Experiment}{23}
-\contentsline {subsection}{\numberline {15.1}Model 1: Simple NN-based Emission}{23}
+\contentsline {section}{\numberline {9}Alignment-based Neural Machine Translation \citep {Alkhouli2016AlignmentBasedNM} }{18}
+\contentsline {section}{\numberline {10}Hybrid Neural Network alignment and Lexicon Model in direct HMM for Statistical Machine Translation \citep {Wang2017HybridNN} }{18}
+\contentsline {subsection}{\numberline {10.1}NN-based Alignment and Lexical model}{18}
+\contentsline {subsection}{\numberline {10.2}Objective function}{19}
+\contentsline {subsection}{\numberline {10.3}Algorithm}{19}
+\contentsline {section}{\numberline {11}HMM Word and Phrase Alignment for Statistical Machine Translation \citep {Deng2008HMM} }{19}
+\contentsline {section}{\numberline {12}Neural Network-based Word Alignment through Score Aggregation \citep {Legrand16neural}}{19}
+\contentsline {part}{II\hspace {1em}Report}{20}
+\contentsline {section}{\numberline {13}Overview about statistical alignment }{20}
+\contentsline {subsection}{\numberline {13.1}Word-based alignment ? \cite {Och2003Systematic}}{20}
+\contentsline {subsection}{\numberline {13.2}Hidden Markov Alignment Model \cite {Och2003Systematic}}{20}
+\contentsline {subsubsection}{\numberline {13.2.1}Assumption about HMM alignment probability $p(a_j | a_{j-1}, I)$ or $p(i | i', I)$}{21}
+\contentsline {subsubsection}{\numberline {13.2.2}Extension: Empty word in target sentence}{22}
+\contentsline {subsubsection}{\numberline {13.2.3}Extension: Refinement of alignment}{22}
+\contentsline {section}{\numberline {14}Word alignment model in Neural Network}{22}
+\contentsline {subsection}{\numberline {14.1}Probability approach}{22}
+\contentsline {subsubsection}{\numberline {14.1.1}\cite {Tran16unsupervised}}{22}
+\contentsline {paragraph}{How to apply NN ?}{23}
+\contentsline {paragraph}{What is the problem of transition matrix in programming ?}{23}
+\contentsline {subsection}{\numberline {14.2}Non-probability - Score approach}{24}
+\contentsline {subsubsection}{\numberline {14.2.1}\cite {Yang13word}, \cite {Tamura14recurrent}}{24}
+\contentsline {subsection}{\numberline {14.3}NN-based Alignment under jump-distance approach}{24}
+\contentsline {section}{\numberline {15}Symmetrical alignment}{24}
+\contentsline {section}{\numberline {16}Techniques in Alignment}{24}
+\contentsline {subsection}{\numberline {16.1}Agreement between models}{24}
+\contentsline {subsection}{\numberline {16.2}Word class for large vocabulary}{24}
+\contentsline {section}{\numberline {17}Evaluation of a translation/alignment}{24}
+\contentsline {section}{\numberline {18}HMM-NN Experiment}{24}
+\contentsline {subsection}{\numberline {18.1}Model 1: Simple NN-based Emission}{24}

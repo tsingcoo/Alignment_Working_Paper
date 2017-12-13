@@ -7,6 +7,10 @@
 \citation{Yang13word}
 \citation{Tamura14recurrent}
 \citation{Chung2016Hierarchical}
+\citation{Alkhouli2016AlignmentBasedNM}
+\citation{Wang2017HybridNN}
+\citation{Deng2008HMM}
+\citation{Legrand16neural}
 \citation{Och2003Systematic}
 \citation{Och2003Systematic}
 \citation{Tran16unsupervised}
@@ -53,6 +57,7 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {6.2}How does DNN work in word alignment ?}{12}}
 \newlabel{Yang13word NN Alignment Score}{{26}{12}}
 \newlabel{Yang13word Lexical Translation Score}{{27}{13}}
+\newlabel{Yang13word Alignment Translation Score}{{29}{13}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Loss in supervised learning}{13}}
 \newlabel{Yang13word Alignment Loss}{{30}{13}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Analysis}{13}}
@@ -66,6 +71,7 @@
 \@writefile{toc}{\contentsline {section}{\numberline {7}Recurrent Neural Networks for Word Alignment Model \citep  {Tamura14recurrent}}{14}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Main idea}{14}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {7.2}How does RNNs work in calculating alignment score ?}{14}}
+\newlabel{Tamura14recurrent Alignment score}{{33}{14}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Loss in unsupervised learning}{14}}
 \newlabel{Tamura14recurrent Loss Unsupervised Learning}{{34}{14}}
 \citation{Liang2006Alignment}
@@ -77,55 +83,78 @@
 \@writefile{toc}{\contentsline {section}{\numberline {8}Hierarchical Multiscale Recurrent Neural Networks \citep  {Chung2016Hierarchical}}{16}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Main idea}{16}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Update mechanism}{17}}
+\citation{Alkhouli2016AlignmentBasedNM}
+\citation{Wang2017HybridNN}
+\citation{Wang2017HybridNN}
 \@writefile{toc}{\contentsline {subsection}{\numberline {8.3}Analysis}{18}}
-\@writefile{toc}{\contentsline {section}{\numberline {9}Hybrid Neural Network alignment and Lexicon Model in direct HMM for Statistical Machine Translation}{18}}
+\@writefile{toc}{\contentsline {section}{\numberline {9}Alignment-based Neural Machine Translation \citep  {Alkhouli2016AlignmentBasedNM} }{18}}
+\@writefile{toc}{\contentsline {section}{\numberline {10}Hybrid Neural Network alignment and Lexicon Model in direct HMM for Statistical Machine Translation \citep  {Wang2017HybridNN} }{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.1}NN-based Alignment and Lexical model}{18}}
+\citation{Deng2008HMM}
+\citation{Legrand16neural}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.2}Objective function}{19}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.3}Algorithm}{19}}
+\@writefile{toc}{\contentsline {section}{\numberline {11}HMM Word and Phrase Alignment for Statistical Machine Translation \citep  {Deng2008HMM} }{19}}
+\@writefile{toc}{\contentsline {section}{\numberline {12}Neural Network-based Word Alignment through Score Aggregation \citep  {Legrand16neural}}{19}}
 \citation{Och2003Systematic}
 \citation{Och2003Systematic}
-\@writefile{toc}{\contentsline {part}{II\hspace  {1em}Report}{19}}
-\@writefile{toc}{\contentsline {section}{\numberline {10}Overview about statistical alignment }{19}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.1}Word-based alignment ? \cite  {Och2003Systematic}}{19}}
-\newlabel{Overview about Statistical Alignment p(f,e)}{{41}{19}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.2}Hidden Markov Alignment Model \cite  {Och2003Systematic}}{19}}
+\@writefile{toc}{\contentsline {part}{II\hspace  {1em}Report}{20}}
+\@writefile{toc}{\contentsline {section}{\numberline {13}Overview about statistical alignment }{20}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {13.1}Word-based alignment ? \cite  {Och2003Systematic}}{20}}
+\newlabel{Overview about Statistical Alignment p(f,e)}{{41}{20}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {13.2}Hidden Markov Alignment Model \cite  {Och2003Systematic}}{20}}
 \citation{Vogel1996HMM}
-\newlabel{Och2003Systematic Alignment Model Equation}{{44}{20}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {10.2.1}Assumption about HMM alignment probability $p(a_j | a_{j-1}, I)$ or $p(i | i', I)$}{20}}
+\newlabel{Hidden Markov Alignment Model p(f, a|e)}{{43}{21}}
+\newlabel{Och2003Systematic Alignment Model Equation}{{44}{21}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {13.2.1}Assumption about HMM alignment probability $p(a_j | a_{j-1}, I)$ or $p(i | i', I)$}{21}}
 \citation{Tran16unsupervised}
 \citation{Tran16unsupervised}
 \citation{Tran16unsupervised}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {10.2.2}Extension: Empty word in target sentence}{21}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {10.2.3}Extension: Refinement of alignment}{21}}
-\@writefile{toc}{\contentsline {section}{\numberline {11}Word alignment model in Neural Network}{21}}
-\newlabel{Word Alignment Model Neural Network p(f,e)}{{49}{21}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {11.1}Probability approach}{21}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {11.1.1}\cite  {Tran16unsupervised}}{21}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {13.2.2}Extension: Empty word in target sentence}{22}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {13.2.3}Extension: Refinement of alignment}{22}}
+\@writefile{toc}{\contentsline {section}{\numberline {14}Word alignment model in Neural Network}{22}}
+\newlabel{Word Alignment Model Neural Network p(f,e)}{{49}{22}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {14.1}Probability approach}{22}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {14.1.1}\cite  {Tran16unsupervised}}{22}}
 \citation{Yang13word}
 \citation{Tamura14recurrent}
-\newlabel{Word Alignment Model Neural Network Gradient}{{50}{22}}
-\@writefile{toc}{\contentsline {paragraph}{How to apply NN ?}{22}}
-\@writefile{toc}{\contentsline {paragraph}{What is the problem of transition matrix in programming ?}{22}}
+\citation{Yang13word}
+\newlabel{Word Alignment Model Neural Network Gradient}{{50}{23}}
+\@writefile{toc}{\contentsline {paragraph}{How to apply NN ?}{23}}
+\@writefile{toc}{\contentsline {paragraph}{What is the problem of transition matrix in programming ?}{23}}
+\citation{Tamura14recurrent}
+\citation{Yang13word}
+\citation{Alkhouli2016AlignmentBasedNM}
+\citation{Wang2017HybridNN}
 \citation{Ghader2017what}
 \citation{Rikters2017confidence}
 \citation{Rikters2017confidence}
-\@writefile{toc}{\contentsline {subsection}{\numberline {11.2}Non-probability - Score approach}{23}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {11.2.1}\cite  {Yang13word}, \cite  {Tamura14recurrent}}{23}}
-\@writefile{toc}{\contentsline {section}{\numberline {12}Symmetrical alignment}{23}}
-\@writefile{toc}{\contentsline {section}{\numberline {13}Techniques in Alignment}{23}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {13.1}Agreement between models}{23}}
-\@writefile{toc}{\contentsline {section}{\numberline {14}Evaluation of a translation/alignment}{23}}
-\@writefile{toc}{\contentsline {section}{\numberline {15}HMM-NN Experiment}{23}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {15.1}Model 1: Simple NN-based Emission}{23}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {14.2}Non-probability - Score approach}{24}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {14.2.1}\cite  {Yang13word}, \cite  {Tamura14recurrent}}{24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {14.3}NN-based Alignment under jump-distance approach}{24}}
+\@writefile{toc}{\contentsline {section}{\numberline {15}Symmetrical alignment}{24}}
+\@writefile{toc}{\contentsline {section}{\numberline {16}Techniques in Alignment}{24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {16.1}Agreement between models}{24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {16.2}Word class for large vocabulary}{24}}
+\@writefile{toc}{\contentsline {section}{\numberline {17}Evaluation of a translation/alignment}{24}}
+\@writefile{toc}{\contentsline {section}{\numberline {18}HMM-NN Experiment}{24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {18.1}Model 1: Simple NN-based Emission}{24}}
 \citation{Tran16unsupervised}
-\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Model 1}}{24}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Model 1}}{26}}
 \bibstyle{plain}
 \bibdata{Khoa_Alignment_Paper}
-\bibcite{Chung2016Hierarchical}{{1}{}{{}}{{}}}
-\bibcite{Conneau2017Word}{{2}{}{{}}{{}}}
-\bibcite{Ghader2017what}{{3}{}{{}}{{}}}
-\bibcite{Liang2006Alignment}{{4}{}{{}}{{}}}
-\bibcite{Och2003Systematic}{{5}{}{{}}{{}}}
-\bibcite{Rikters2017confidence}{{6}{}{{}}{{}}}
-\bibcite{Tamura14recurrent}{{7}{}{{}}{{}}}
-\bibcite{Tran16unsupervised}{{8}{}{{}}{{}}}
-\bibcite{Vogel1996HMM}{{9}{}{{}}{{}}}
-\bibcite{Yang13word}{{10}{}{{}}{{}}}
+\bibcite{Alkhouli2016AlignmentBasedNM}{{1}{}{{}}{{}}}
+\bibcite{Chung2016Hierarchical}{{2}{}{{}}{{}}}
+\bibcite{Conneau2017Word}{{3}{}{{}}{{}}}
+\bibcite{Deng2008HMM}{{4}{}{{}}{{}}}
+\bibcite{Ghader2017what}{{5}{}{{}}{{}}}
+\bibcite{Legrand16neural}{{6}{}{{}}{{}}}
+\bibcite{Liang2006Alignment}{{7}{}{{}}{{}}}
+\bibcite{Och2003Systematic}{{8}{}{{}}{{}}}
+\bibcite{Rikters2017confidence}{{9}{}{{}}{{}}}
+\bibcite{Tamura14recurrent}{{10}{}{{}}{{}}}
+\bibcite{Tran16unsupervised}{{11}{}{{}}{{}}}
+\bibcite{Vogel1996HMM}{{12}{}{{}}{{}}}
+\bibcite{Wang2017HybridNN}{{13}{}{{}}{{}}}
+\bibcite{Yang13word}{{14}{}{{}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
